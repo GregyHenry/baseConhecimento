@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Base de conhecimento</title>
+  <meta name="author" content="Gregory Henry" />
+  <meta name="description" content="Base de conhecimento" />
+  <meta charset="utf-8" />
+  <meta /index.html name="viewport" content="width=device-width,
+    initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </div>
+
+      <!– Menu –>
+        <div class="p-4 pt-5">
+          <h1>
+            <!– Logo Texto –>
+              <a href="index.html" class="logo">Base de conhecimento</a>
+          </h1>
+
+          <!– Menu –>
+            <ul class="list-unstyled components mb-5">
+              <li class="active">
+                <a href="#development" data-toggle="collapse" aria-expanded="false"
+                  class="dropdown-toggle">Desenvolvimento
+                </a>
+                <ul class="collapse list-unstyled" id="development">
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Java</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Javascript</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#bddata" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bando de
+                  Dados</a>
+                <ul class="collapse list-unstyled" id="bddata">
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">MongoBD</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">MySql</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Oracle</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#toolsSubmenu" data-toggle="collapse" aria-expanded="false"
+                  class="dropdown-toggle">Ferramentas</a>
+                <ul class="collapse list-unstyled" id="toolsSubmenu">
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Insomnia</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Postman</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">SoapUI</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Sql
+                      Developer</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#repository" data-toggle="collapse" aria-expanded="false"
+                  class="dropdown-toggle">Repositório</a>
+                <ul class="collapse list-unstyled" id="repository">
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Git</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">GitHub</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">GtLab</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#tAutomation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Teste
+                  Automatizado</a>
+                <ul class="collapse list-unstyled" id="tAutomation">
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">RPA</a>
+                  </li>
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Selenium</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#performance" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Teste de
+                  Performance</a>
+                <ul class="collapse list-unstyled" id="performance">
+                  <li>
+                    <a class="textSize" href="#" onclick="return disableVisibility()">Jmeter</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="footer">
+              <p>
+                Developed by <a class="footer" href="mailto:ryguimaraes@gmail.com">Gregy</a><br />
+              </p>
+              <p>
+                <a class="iconGitLab" href="https://github.com/GregyHenry" target="_blank">
+                  <i class="fa-brands fa-github"></i></a>
+              </p>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <h2 id="elementHTMLTitle">Bem-vindo</h2>
+      <br>
+      <p id="elementHTMLText">
+        Página criada para compartilhamento de conhecimento nos tópicos:
+        <br>
+        <br>
+        • Desenvolvimento - BackEnd / FrontEnd
+        <br>
+        • Banco de dados
+        <br>
+        • Serviços Soap e Rest
+        <br>
+        • Testes Automatizados e Performance
+        <br>
+        • Ferramentas e Repositórios
+        <br>
+        <br>
+        Essa página sofrerá <strong>evoluções</strong> com tempo, onde será alterada sua tecnologia de BackEnd e
+        FrontEnd,
+        inicialmente está sendo
+        criada de forma básica utilizando Bootstrap / Html / Css e Javascript <br> e será <strong>migrada</strong> para
+        ReactJs e
+        NodeJs. Toda evolução da página será documentada para compartilhamento do processo e conhecimento.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
