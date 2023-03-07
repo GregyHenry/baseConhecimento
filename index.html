@@ -10,7 +10,7 @@
     initial-scale=1, shrink-to-fit=no" />
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 
@@ -35,11 +35,11 @@
             <ul class="list-unstyled components mb-5">
               <li class="active">
                 <a href="#development" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle">Desenvolvimento
+                  class="dropdown-toggle menu-item">Desenvolvimento
                 </a>
-                <ul class="collapse list-unstyled" id="development">
+                <ul class="collapse list-unstyled development-submenu" id="development">
                   <li>
-                    <a class="textSize" href="#" onclick="return disableVisibility()">Java</a>
+                    <a class=" textSize" href="#" onclick="return disableVisibility()">Java</a>
                   </li>
                   <li>
                     <a class="textSize" href="#" onclick="return disableVisibility()">Javascript</a>
@@ -48,9 +48,10 @@
               </li>
 
               <li>
-                <a href="#bddata" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bando de
+                <a href="#bddata" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Banco
+                  de
                   Dados</a>
-                <ul class="collapse list-unstyled" id="bddata">
+                <ul class="collapse list-unstyled bddata-submenu" id="bddata">
                   <li>
                     <a class="textSize" href="#" onclick="return disableVisibility()">MongoBD</a>
                   </li>
@@ -65,10 +66,11 @@
 
               <li>
                 <a href="#toolsSubmenu" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle">Ferramentas</a>
-                <ul class="collapse list-unstyled" id="toolsSubmenu">
+                  class="dropdown-toggle menu-item">Ferramentas</a>
+                <ul class="collapse list-unstyled toolsSubmenu-submenu" id="toolsSubmenu">
                   <li>
-                    <a class="textSize" href="#" onclick="return disableVisibility()">Insomnia</a>
+                    <a id="insomnia-link" class="textSize" href="/pages/ferramentas/insomnia.html" target="iframe"
+                      onclick="return disableVisibility()">Insomnia</a>
                   </li>
                   <li>
                     <a class="textSize" href="#" onclick="return disableVisibility()">Postman</a>
@@ -85,8 +87,8 @@
 
               <li>
                 <a href="#repository" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle">Repositório</a>
-                <ul class="collapse list-unstyled" id="repository">
+                  class="dropdown-toggle menu-item">Repositório</a>
+                <ul class="collapse list-unstyled repository-submenu" id="repository">
                   <li>
                     <a class="textSize" href="#" onclick="return disableVisibility()">Git</a>
                   </li>
@@ -100,9 +102,10 @@
               </li>
 
               <li>
-                <a href="#tAutomation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Teste
+                <a href="#tAutomation" data-toggle="collapse" aria-expanded="false"
+                  class="dropdown-toggle menu-item">Teste
                   Automatizado</a>
-                <ul class="collapse list-unstyled" id="tAutomation">
+                <ul class="collapse list-unstyled tAutomation-submenu" id="tAutomation">
                   <li>
                     <a class="textSize" href="#" onclick="return disableVisibility()">RPA</a>
                   </li>
@@ -113,9 +116,10 @@
               </li>
 
               <li>
-                <a href="#performance" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Teste de
+                <a href="#performance" data-toggle="collapse" aria-expanded="false"
+                  class="dropdown-toggle menu-item">Teste de
                   Performance</a>
-                <ul class="collapse list-unstyled" id="performance">
+                <ul class="collapse list-unstyled performance-submenu" id="performance">
                   <li>
                     <a class="textSize" href="#" onclick="return disableVisibility()">Jmeter</a>
                   </li>
@@ -159,14 +163,21 @@
         criada de forma básica utilizando Bootstrap / Html / Css e Javascript e será <strong>migrada</strong> para
         ReactJs e
         NodeJs. Toda evolução da página será documentada para compartilhamento do processo e conhecimento.
+        <br>
+        <br>
+        <strong class="menuStrCor">***</strong> Em andamentos a construção do Menu/Módulo <strong>Ferramentas</strong> >
+        <strong class="menuStrCor">Insomnia</strong>.
       </p>
     </div>
+
   </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/disableVisibility.js"></script>
+  <script src="js/enableCollapsibleMenu.js"></script>
 </body>
 
 </html>

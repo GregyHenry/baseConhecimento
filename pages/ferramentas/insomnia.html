@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta /index.html name="viewport" content="width=device-width,
+    initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <!– Titulo da página –>
+        <div class="container text-center">
+          <div class="row rowHeader">
+            <div class="col-auto me-auto">
+              <p class="iframeTitle">Insomnia</p>
+              <p class="iframeDate">Criado em: 06/03/2023</p>
+            </div>
+          </div>
+
+          <!– Criando Accordion para montagem do Collapse –>
+            <div class="accordion" id="accordionMaster">
+              <div class="card">
+                <div class="card-header cardColor" id="headingOne">
+                  <h5 class="mb-0">
+                    <!– Criando primera sessão –>
+                      <button class="btn btn-link titleCor" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        onclick="scrollUp()">
+                        1. Introdução
+                      </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMaster">
+                  <div class="card-body textCard imagesDefault">
+                    <p>
+                      Insomnia é uma ferramenta Open Source para
+                      desenvolvimento/teste de API Clients.
+
+                      <br />
+
+                      Utilizado para envio de requisições REST, SOAP, GraphQ e GRPC.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!– Criando segunda sessão –>
+                <div class="card">
+                  <div class="card-header cardColor" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                        onclick="scrollUp()">
+                        2. Instalação Insomnia
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMaster">
+                    <div class="card-body textCard imagesDefault">
+                      <p>Realize o download do Insomnia pelo
+                        site
+                        <a class="collapseUrl" href="https://insomnia.rest/download"
+                          target="_blank">https://insomnia.rest/download</a>
+                        e efetue a instalação padrão.
+                      </p>
+                      <p><img src="/images/pages/ferramentas/topico02/01_download.png"
+                          alt="Site oficial Insomnia, posicionado em download"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!– Criando terceira sessão –>
+                  <div class="card">
+                    <div class="card-header cardColor" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                          onclick="scrollUp()">
+                          3. Alterando tema e instalando plugins
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionMaster">
+                      <div class="card-body textCard imagesDefault">
+                        <p>
+                          <img src="/images/pages/ferramentas/emConstrucao.png"
+                            alt="Imagem escrito Em Construção para demonstrar que o modulo não está completo">
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scrollUp.js"></script>
+</body>
+
+</html>
