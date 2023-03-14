@@ -1,3 +1,8 @@
+function hideMenu() {
+  let elementMenu = document.getElementById('sidebar');
+  elementMenu.classList.remove('active');
+}
+
 function disableVisibility() {
   let elementHTMLTitle = document.getElementById('elementHTMLTitle');
   let elementHTMLText = document.getElementById('elementHTMLText');
@@ -11,6 +16,7 @@ function disableVisibility() {
       iframe.id = 'openPages';
       iframe.name = 'iframe';
       contentDiv.appendChild(iframe);
+      hideMenu();
     } else if (
       event.target.tagName.toLowerCase() === 'a' &&
       event.target.id !== 'sidebarCollapse'
@@ -18,8 +24,10 @@ function disableVisibility() {
       window.location.href = 'index.html';
     }
   });
-}
 
-//Avaliar necessidade quando tiver muito topicos criados no according
-//  document.body.scrollTop = 0;
-//  document.documentElement.scrollTop = 0;
+  window.addEventListener('resize', function () {
+    if (window.innerWidth <= 991.98) {
+      hideMenu();
+    }
+  });
+}
