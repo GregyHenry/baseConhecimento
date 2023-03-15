@@ -10846,6 +10846,7 @@ a[data-toggle='collapse'] {
   transition: all 0.3s;
   width: 180vh;
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 .imageConstFlux img {
