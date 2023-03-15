@@ -523,7 +523,7 @@
                                 <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
                                   data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
                                   onclick="scrollUp()">
-                                  7. Em construção
+                                  7. Criando ambiente com variáveis definidas
                                 </button>
                               </h5>
                             </div>
@@ -533,12 +533,177 @@
                               <div class="card-body textCard imagesDefault">
 
                                 <p>
-                                  <img src="../../images/pages/ferramentas/emConstrucao.png" alt="Modulo em construção">
+                                  O ambiente <strong>(environment)</strong> no Insomnia é uma maneira de gerenciar
+                                  diferentes conjuntos
+                                  de variáveis que podem ser usados ​​em suas solicitações API. Essas variáveis podem
+                                  ser usadas em suas solicitações API para diferentes fins, como autenticação,
+                                  autorização, configurações de conexão, configuração path da url, configuração de Query
+                                  String etc.
+                                </p>
+
+                                <p>Clique na opção <strong>No Environment</strong> e após em <strong>Manage
+                                    Environments</strong>:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/01_environment.png"
+                                    alt="Tela exibindo a opção No Enviroment">
+                                </p>
+
+                                <p>Clique na opção <strong>Sub Environments</strong> e após em
+                                  <strong>Environment</strong>:
+                                </p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/02_sub_environments.png"
+                                    alt="Tela exibindo o menu Sub Environments">
+                                </p>
+
+                                <p>Realize um duplo click para inserir o nome desejado para o ambiente:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/03_nameEnvironments.png"
+                                    alt="Renomeando o ambiente">
+                                </p>
+
+                                <p>Clique na opção <strong>Color</strong> e após em <strong>Assign Color</strong>:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/04_assginColor.png"
+                                    alt="Apresentando menu Assgin Color">
+                                </p>
+
+                                <p>Insira a cor desejada:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/05_insertColor.png"
+                                    alt="Selecionando a cor desejada">
+                                </p>
+
+                                <p>As variáveis são criadas como estrutura JSON, abaixo estamos criando a estrutura de
+                                  objeto com nome <strong>themoviedb</strong>, que é referencia da onde está exposta
+                                  api, pode ser inserido
+                                  qualquer nome que melhor relacione com seu projeto, após está sendo criado a variável
+                                  <strong>url</strong> e <strong>api-key</strong> para receber os valores
+                                  fixos para esse ambiente:
+                                </p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/06_confJson.png"
+                                    alt="Configurado o json do ambiente com as variaveis">
+                                </p>
+
+                                <p>Clique no botão <strong>“Close”</strong> para concluir a configuração.</p>
+
+                                <p>Clique na opção <strong>No Environment</strong> e após em <strong>Use
+                                    {Seu Ambiente}</strong>:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/07_useStage.png"
+                                    alt="Apresentado menu para seleção do ambiente">
+                                </p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/08_setAmb.png"
+                                    alt="Ambiente selecionado">
+                                </p>
+
+                                <p>Ambiente selecionado deverá ser apresentado conforme acima.</p>
+
+                                <p>Configurando a api <strong>Get Details</strong> utilizando as variáveis definidas no
+                                  ambiente:</p>
+
+                                <p>1- Delete a url <strong>https://api.themoviedb.org/3</strong>:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/09_urlGetDetails.png"
+                                    alt="Demonstrando a url a ser deletada">
+                                </p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/10_deleteUrl.png"
+                                    alt="Url deletada">
+                                </p>
+
+                                <p>Mantenha curso do mouse antes do <strong>/</strong> e clique em <strong>CTRL +
+                                    SPACE</strong>, será apresentada a variável de ambiente da url que foi criado,
+                                  selecione a variável:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/11_varAmbUrl.png"
+                                    alt="Variavel de ambiente demonstrada">
+                                </p>
+
+                                <p>Deverá ser apresentado a variável conforme abaixo:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/12_insertVarAmbUrl.png"
+                                    alt="Variavel Inserida da url">
+                                </p>
+
+                                <p>2- Delete o dado da Query String <strong>api_key</strong>:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/13_queryStringApiKey.png"
+                                    alt="Demonstrado a query string api-key a ser deletada">
+                                </p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/14_deleteQueryStringApiKey.png"
+                                    alt="Query String api-key deletado">
+                                </p>
+
+                                <p>Mantenha curso do mouse após o <strong>=</strong> e clique em <strong>CTRL +
+                                    SPACE</strong>, será apresentada a variável de ambiente da api-key que foi criado,
+                                  selecione a variável:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/15_varAmbApiKey.png"
+                                    alt="Demonstrando a variavel api-key criada no ambiente para inserção">
+                                </p>
+
+                                <p>Deverá ser apresentado a variável conforme abaixo:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/16_insertVarAmbApiKey.png"
+                                    alt="Inserido a variavel de ambiente api-key">
+                                </p>
+
+                                <p>Clique no botão <strong>“Send”</strong> será efetuado a chamada do serviço com a
+                                  configuração das variáveis conforme abaixo:</p>
+
+                                <p>
+                                  <img src="../../images/pages/ferramentas/topico07/17_sendRequest.png"
+                                    alt="Teste de serviço realizado com sucesso com as variaveis configuradas na url">
                                 </p>
 
                               </div>
                             </div>
                           </div>
+
+                          <!– Criando otiva sessão –>
+                            <div class="card">
+                              <div class="card-header cardColor" id="headingEight">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
+                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                    onclick="scrollUp()">
+                                    8. Configurando Response Body Attribute para execução automática serviços
+                                  </button>
+                                </h5>
+                              </div>
+
+                              <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                data-parent="#accordionMaster">
+                                <div class="card-body textCard imagesDefault">
+
+                                  <p>
+                                    <img src="../../images/pages/ferramentas/emConstrucao.png"
+                                      alt="Modulo em construção">
+                                  </p>
+
+                                </div>
+                              </div>
+                            </div>
 
             </div>
         </div>
