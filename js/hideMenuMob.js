@@ -11,11 +11,7 @@ function disableVisibility() {
     if (event.target.id === 'insomnia-link') {
       elementHTMLTitle.style.display = 'none';
       elementHTMLText.style.display = 'none';
-      let contentDiv = document.getElementById('content');
-      let iframe = document.createElement('iframe');
-      iframe.id = 'openPages';
-      iframe.name = 'iframe';
-      contentDiv.appendChild(iframe);
+      createIframe();
       hideMenu();
     } else if (
       event.target.tagName.toLowerCase() === 'a' &&
@@ -24,10 +20,12 @@ function disableVisibility() {
       window.location.href = 'index.html';
     }
   });
+}
 
-  window.addEventListener('resize', function () {
-    if (window.innerWidth <= 991.98) {
-      hideMenu();
-    }
-  });
+function createIframe() {
+  let contentDiv = document.getElementById('content');
+  let iframe = document.createElement('iframe');
+  iframe.id = 'openPages';
+  iframe.name = 'iframe';
+  contentDiv.appendChild(iframe);
 }
