@@ -71,7 +71,7 @@
                 <ul class="collapse list-unstyled toolsSubmenu-submenu" id="toolsSubmenu">
                   <li>
                     <a id="insomnia-link" class="textSize" href="pages/ferramentas/insomnia.html" target="iframe"
-                      onclick="return disableVisibility()">Insomnia</a>
+                      onclick="return disableVisibility(); hideMenu()">Insomnia</a>
                   </li>
                   <li>
                     <a class="textSize menu-link" href="#" onclick="return disableVisibility(); hideMenu()">Postman</a>
@@ -129,12 +129,16 @@
             </ul>
 
             <div class="footer">
+              <p> <a id="contactMail" class="textSize" href="pages/contato/contato.html" target="iframe"
+                  onclick="return disableVisibility(); hideMenu()">📧 Entre em Contato</a></p>
               <p>
-                Developed by <a class="footer" href="mailto:ryguimaraes@gmail.com">Gregy</a><br />
+                Developed by <strong class="footer">Gregy</strong><br />
               </p>
               <p>
-                <a class="iconGitLab" href="https://github.com/GregyHenry" target="_blank">
+                <a class="fontAwesomeIcon" href="https://github.com/GregyHenry" target="_blank">
                   <i class="fa-brands fa-github"></i></a>
+                <a class="fontAwesomeIcon linkedin" href="https://www.linkedin.com/in/gregory-henry-mguimaraes/"
+                  target="_blank"><i class="fab fa-linkedin"></i></a>
               </p>
             </div>
         </div>
@@ -178,7 +182,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/enableCollapsibleMenu.js"></script>
-  <script src="js/hideMenuMob.js"></script>
+  <script src="js/controllerIframeEMenu.js"></script>
 </body>
 
 </html>

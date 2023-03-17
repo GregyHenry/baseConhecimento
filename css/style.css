@@ -10853,14 +10853,18 @@ a[data-toggle='collapse'] {
   width: 300px;
 }
 
-.iconGitLab {
+.fontAwesomeIcon {
   font-size: 30px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.iconGitLab:hover {
+.fontAwesomeIcon:hover {
   color: #fff;
   font-size: 35px;
+}
+
+.linkedin {
+  margin-left: 5%;
 }
 
 .imageConstFlux {
@@ -10901,13 +10905,13 @@ a[data-toggle='collapse'] {
 }
 
 .btn.btn-primary {
-  background: #660099;
-  border-color: #660099;
+  background: #273c75;
+  border-color: #273c75;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background: #660099 !important;
-  border-color: #660099 !important;
+  background: #273c75 !important;
+  border-color: #273c75 !important;
 }
 
 .footer p {
@@ -10918,8 +10922,13 @@ a[data-toggle='collapse'] {
   color: #fff;
 }
 
-.footer:hover {
-  text-decoration: none;
+#contactMail {
+  color: rgba(248, 249, 250, 0.5);
+  font-size: 18px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+#contactMail:hover {
   color: #fff;
 }
 
@@ -11001,4 +11010,28 @@ a[data-toggle='collapse'] {
 
 .menuStrCor {
   color: red;
+}
+
+.textMail {
+  height: 250px !important;
+}
+
+.sendMailSucess {
+  margin-top: 3%;
+  color: #1b1464;
+}
+
+.sendMailFailed {
+  margin-top: 3%;
+  color: red;
+}
+
+#form {
+  text-align: left;
+  color: #002752;
+  font-size: 18px;
+}
+
+#subject {
+  font-size: 16px;
 }
