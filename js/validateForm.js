@@ -11,6 +11,7 @@ form.addEventListener('submit', function (event) {
   const textMailValue = textMailInput.value;
 
   if (mailValue.trim() === '') {
+    errorText.classList.add('alertRequiredFields');
     errorText.textContent = 'Este campo é obrigatório';
     mailInput.classList.remove('is-valid');
     mailInput.classList.add('is-invalid');
@@ -21,6 +22,7 @@ form.addEventListener('submit', function (event) {
   }
 
   if (textMailValue.trim() === '') {
+    errorTextMail.classList.add('alertRequiredFields');
     errorTextMail.textContent = 'Este campo é obrigatório';
     textMailInput.classList.remove('is-valid');
     textMailInput.classList.add('is-invalid');

@@ -11020,6 +11020,11 @@ a[data-toggle='collapse'] {
   color: #ee5a24;
 }
 
+.alertRequiredFields {
+  color: red;
+  font-weight: bold;
+}
+
 .textMail {
   height: 250px !important;
 }
@@ -11046,4 +11051,4 @@ a[data-toggle='collapse'] {
 .btnPDF {
   text-align: right;
   margin-bottom: 1%;
-}
+};
