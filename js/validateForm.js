@@ -39,7 +39,7 @@ form.addEventListener('submit', function (event) {
     emailjs
       .send('service_fuvjx0o', 'template_712mzfl', {
         mail: mailInput.value,
-        to_email: 'ryguimaraes@gmail.com',
+        to_email: 'gregyhenry@gmail.com',
         subject: subjectInput.value,
         textMail: textMailInput.value,
       })
@@ -49,11 +49,15 @@ form.addEventListener('submit', function (event) {
           const successMessage = document.getElementById('sucessMessage');
           successMessage.classList.remove('d-none');
           form.reset();
+          const delFailedMessage = document.getElementById('failedMessage');
+          delFailedMessage.classList.add('d-none');
         },
         function (error) {
           console.log('FAILED...', error);
           const successMessage = document.getElementById('failedMessage');
           successMessage.classList.remove('d-none');
+          const retryMessage = document.getElementById('sucessMessage');
+          retryMessage.classList.add('d-none');
         }
       );
   }
