@@ -2,15 +2,17 @@
 
 Página criada para compartilhamento de conhecimento nos tópicos:
 
-• Desenvolvimento - BackEnd / FrontEnd
-• Banco de dados
-• Serviços Soap e Rest
-• Testes Automatizados e Performance
-• Ferramentas e Repositórios
+#### • Desenvolvimento - BackEnd / FrontEnd
+#### • Banco de dados
+#### • Serviços Soap e Rest
+#### • Testes Automatizados e Performance
+#### • Ferramentas e Repositórios
 
-Aplicação: https://gregyhenry.github.io/baseConhecimento.github.io
+## Aplicação: 
 
-![baseConhecimento](https://user-images.githubusercontent.com/92655806/225182608-ad3c0054-2dca-4469-b58c-b80f271a50e0.png)
+https://gregyhenry.github.io/baseConhecimento.github.io
+
+![home](https://user-images.githubusercontent.com/92655806/226186828-3b7f611b-557f-4b33-8ee8-33c4e2fb392d.png)
 
 ## Tecnologias utilizadas
 
