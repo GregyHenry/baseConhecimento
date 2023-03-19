@@ -11012,8 +11012,12 @@ a[data-toggle='collapse'] {
   margin-bottom: -1px;
 }
 
-.menuStrCor {
-  color: red;
+.completedAction {
+  color: #009432;
+}
+
+.actionInProgress {
+  color: #ee5a24;
 }
 
 .textMail {

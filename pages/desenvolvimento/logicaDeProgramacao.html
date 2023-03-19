@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta /index.html name="viewport" content="width=device-width,
+    initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <!– Titulo da página –>
+        <div class="container text-center">
+          <div class="row rowHeader">
+            <div class="col-auto me-auto">
+              <p class="iframeTitle">Lógica de Programação</p>
+              <p class="iframeDate">Criado em: 19/03/2023</p>
+            </div>
+          </div>
+          <div class="btnPDF">
+            <button id="download-button" type=" button" class="btn btn-primary">Download</button>
+          </div>
+
+          <!– Criando Accordion para montagem do Collapse –>
+            <div class="accordion" id="accordionMaster">
+              <div class="card">
+                <div class="card-header cardColor" id="headingOne">
+                  <h5 class="mb-0">
+                    <!– Criando primera sessão –>
+                      <button class="btn btn-link titleCor" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        onclick="scrollUp()">
+                        1. Introdução
+                      </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMaster">
+                  <div class="card-body textCard imagesDefault">
+                    <p>
+                      <img src="../../images/pages/ferramentas/emConstrucao.png" alt="Em construção página">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/scrollUp.js"></script>
+    <script src="../../js/downloadPDF.js"></script>
+</body>
+
+</html>
