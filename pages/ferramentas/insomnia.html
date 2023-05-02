@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta /index.html name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta /index.html name="viewport" content="width=device-width,
-    initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../../css/style.css" />
-</head>
-
-<body>
-  <div class="wrapper d-flex align-items-stretch">
-    <div id="content" class="p-4 p-md-5 pt-5">
-      <!– Titulo da página –>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <!– Titulo da página –>
         <div class="container text-center">
           <div class="row rowHeader">
             <div class="col-auto me-auto">
@@ -28,1214 +26,898 @@
           </div>
 
           <!– Criando Accordion para montagem do Collapse –>
-            <div class="accordion" id="accordionMaster">
-              <div class="card">
-                <div class="card-header cardColor" id="headingOne">
-                  <h5 class="mb-0">
-                    <!– Criando primera sessão –>
-                      <button class="btn btn-link titleCor" type="button" data-toggle="collapse"
-                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                        onclick="scrollUp()">
-                        1. Introdução
-                      </button>
-                  </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMaster">
-                  <div class="card-body textCard imagesDefault">
-                    <p>
-                      Insomnia é uma ferramenta Open Source para
-                      desenvolvimento/teste de API Clients.
-
-                      <br />
-
-                      Utilizado para envio de requisições REST, SOAP, GraphQ e GRPC.
-                    </p>
-                  </div>
-                </div>
+          <div class="accordion" id="accordionMaster">
+            <div class="card">
+              <div class="card-header cardColor" id="headingOne">
+                <h5 class="mb-0">
+                  <!– Criando primera sessão –>
+                  <button class="btn btn-link titleCor" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="scrollUp()">1. Introdução</button>
+                </h5>
               </div>
 
-              <!– Criando segunda sessão –>
-                <div class="card">
-                  <div class="card-header cardColor" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                        onclick="scrollUp()">
-                        2. Instalação Insomnia
-                      </button>
-                    </h5>
-                  </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>
+                    Insomnia é uma ferramenta Open Source para desenvolvimento <strong>/</strong> teste de API Clients.
 
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMaster">
-                    <div class="card-body textCard imagesDefault">
-                      <p>Realize o download do Insomnia no site
-                        <a class="collapseUrl" href="https://insomnia.rest/download"
-                          target="_blank">https://insomnia.rest/download</a>:
-                      </p>
+                    <br />
 
-                      <p>
-                        <img src="../../images/pages/ferramentas/Insomnia/topico02/01_download.png"
-                          alt="Site oficial Insomnia, posicionado em download">
-                      </p>
-
-                      <p>
-                        Clique duas vezes sobre o aplicativo baixado:
-                      </p>
-
-                      <p>
-                        <img src="../../images/pages/ferramentas/Insomnia/topico02/02_appInsomnia.png"
-                          alt="Pasta onde está o aplicativo baixado">
-                      </p>
-
-                      <p>Deverá apresentar aplicação aberta conforme abaixo:</p>
-
-                      <p>
-                        <img src="../../images/pages/ferramentas/Insomnia/topico02/03_openInsomnia.png"
-                          alt="Insomnia aberto">
-                      </p>
-
-                    </div>
-                  </div>
+                    Utilizado para envio de requisições REST, SOAP, GraphQ e GRPC.
+                  </p>
                 </div>
-
-                <!– Criando terceira sessão –>
-                  <div class="card">
-                    <div class="card-header cardColor" id="headingThree">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
-                          onclick="scrollUp()">
-                          3. Instalando plugins externos
-                        </button>
-                      </h5>
-                    </div>
-
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                      data-parent="#accordionMaster">
-                      <div class="card-body textCard imagesDefault">
-
-                        <p>
-                          Clique no menu <strong>Application</strong> na opção <strong>Preferences</strong>:
-                        </p>
-
-                        <p>
-                          <img src="../../images/pages/ferramentas/Insomnia/topico03/01_applicationPreferences.png"
-                            alt="Clicando no menu application no item preferences">
-                        </p>
-
-                        <p>Clique na aba <strong>Plugins</strong>:</p>
-
-                        <p>
-                          <img src="../../images/pages/ferramentas/Insomnia/topico03/02_menuPlugin.png"
-                            alt="Clicando na aba Plugins">
-                        </p>
-
-                        <p>Preencha o campo <strong>“npm-package-name”</strong> com o nome do plugin desejado e clique
-                          no botão
-                          <strong>Install Plugin</strong>:
-                        </p>
-
-                        <p>
-                          <img src="../../images/pages/ferramentas/Insomnia/topico03/03_emptyField.png"
-                            alt="Posicionado no campo npm package name">
-                        </p>
-
-                        <p>Plugin do exemplo <strong>insomnia-plugin-theme-dracula</strong>:</p>
-
-                        <p>
-                          <img src="../../images/pages/ferramentas/Insomnia/topico03/04_filledField.png"
-                            alt="Campo preenchido e disponivel para clicar no botão Install Plugin">
-                        </p>
-
-                        <p>Após clicar no botão <strong>Install Plugin</strong> deverá apresentar a instalação com
-                          sucesso conforme abaixo:
-                        </p>
-
-                        <p>
-                          <img src="../../images/pages/ferramentas/Insomnia/topico03/05_doneInstall.png"
-                            alt="Plugin Instalado">
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <!– Criando quarta sessão –>
-                    <div class="card">
-                      <div class="card-header cardColor" id="headingFour">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
-                            onclick="scrollUp()">
-                            4. Alterando o Theme Default
-                          </button>
-                        </h5>
-                      </div>
-
-                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                        data-parent="#accordionMaster">
-                        <div class="card-body textCard imagesDefault">
-
-                          <p>
-                            Clique no menu <strong>Application</strong> na opção <strong>Preferences</strong>:
-                          </p>
-
-                          <p>
-                            <img src="../../images/pages/ferramentas/Insomnia/topico04/01_applicationPreferences.png"
-                              alt="Clicando no menu application no item preferences">
-                          </p>
-
-                          <p>Clique na aba <strong>Themes</strong>:</p>
-
-                          <p>
-                            <img src="../../images/pages/ferramentas/Insomnia/topico04/02_menuThemes.png"
-                              alt="Clicando na aba Themes">
-                          </p>
-
-                          <p>Selecione o <strong>theme</strong> desejado clicando sobre ele e após feche tela de
-                            preferências:
-                          </p>
-
-                          <p>
-                            <img src="../../images/pages/ferramentas/Insomnia/topico04/04_doneSelectTheme.png"
-                              alt="Theme selecionado">
-                          </p>
-
-                          <p><strong>Observação</strong>: Theme aplicado com sucesso conforme o exemplo acima.</p>
-
-                        </div>
-                      </div>
-                    </div>
-
-                    <!– Criando quinta sessão –>
-                      <div class="card">
-                        <div class="card-header cardColor" id="headingFive">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                              data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
-                              onclick="scrollUp()">
-                              5. Criando o projeto e a collection de apis
-                            </button>
-                          </h5>
-                        </div>
-
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                          data-parent="#accordionMaster">
-                          <div class="card-body textCard imagesDefault">
-
-                            <p>Clique no botão <strong>Personal Projects</strong>:</p>
-
-                            <p>
-                              <img src="../../images/pages/ferramentas/Insomnia/topico05/01_personalProjects.png"
-                                alt="Clicando no botão Personal Projects">
-                            </p>
-
-                            <p>
-                              Clique em criar um novo projeto conforme <strong>item 1</strong>, após insira o nome
-                              desejado para o projeto e clique no botão <strong>"Create"</strong>:
-                            </p>
-
-                            <p>
-                              <img src="../../images/pages/ferramentas/Insomnia/topico05/02_createProject.png"
-                                alt="Criando o projeto inserido nome e clicando no botão Create">
-                            </p>
-
-                            <p>
-                              Clique na opção <strong>“New Collection”</strong>, insira o nome e clique no botão
-                              <strong>“Create”</strong>:
-                            </p>
-
-                            <p>
-                              <img src="../../images/pages/ferramentas/Insomnia/topico05/03_createCollection.png"
-                                alt="Criando a collection inserindo nome e clicando no botão Create">
-                            </p>
-
-                            <p>
-                              Será direcionado para collection criada conforme abaixo:
-                            </p>
-
-                            <p>
-                              <img src="../../images/pages/ferramentas/Insomnia/topico05/04_directedCollection.png"
-                                alt="Direcionado para collection criada">
-                            </p>
-
-                            <p>Para retornar ao projeto para selecionar e/ou criar outras collections, clique sobre o
-                              nome
-                              do projeto conforme <strong>item 1</strong> ou clique sobre a opção <strong>“Personal
-                                Projects”</strong>
-                              conforme <strong>item 2</strong>:
-                            </p>
-
-                            <p>
-                              <img src="../../images/pages/ferramentas/Insomnia/topico05/05_returnProject.png"
-                                alt="Retornando para página de projetos para selecionar e/ou criar novas collections">
-                            </p>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <!– Criando sexta sessão –>
-                        <div class="card">
-                          <div class="card-header cardColor" id="headingSix">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
-                                onclick="scrollUp()">
-                                6. Configurando a primeira Api rest
-                              </button>
-                            </h5>
-                          </div>
-
-                          <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                            data-parent="#accordionMaster">
-                            <div class="card-body textCard imagesDefault">
-
-                              <p>
-                                Selecione o <strong>projeto</strong> e a <strong>collection</strong> que deseja
-                                configurar a primeira Api rest. Exemplo abaixo:
-                              </p>
-
-                              <p>
-                                <img
-                                  src="../../images/pages/ferramentas/Insomnia/topico06/01_selectionProjectCollection.png"
-                                  alt="Selecionado o projeto e a collection">
-                              </p>
-
-                              <p>
-                                Clique na opção <strong>“New Folder”</strong> para criação e melhor organização para
-                                iniciar configuração de uma Api rest (esse passo não é obrigatório, apenas é uma boa
-                                pratica de organização):
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/02_createFolder.png"
-                                  alt="Selecionado a opção para criar pasta para inserir apis">
-                              </p>
-
-                              <p>
-                                Insira o <strong>nome</strong> desejado e clique no botão <strong>“Create”</strong>:
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/03_renameFolder.png"
-                                  alt="Inserido nome da pasta para inserir apis">
-                              </p>
-
-                              <p>Seleciona na pasta criada a opção <strong>“New HTTP Request”</strong>:</p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/04_selectMenuFolder.png"
-                                  alt="Selecionado na pasta criada abertura do menu">
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/05_selectHttpRequest.png"
-                                  alt="Selecioando a opção New Http Request">
-                              </p>
-
-                              <p>Clique com o botão direto do mouse sobre a api criada e selecione a opção
-                                <strong>“Rename”</strong> para inserir o nome amigável para a nova api:
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/06_renameApi.png"
-                                  alt="Inserindo o nome amigavel para api">
-                              </p>
-
-                              <p>
-                                Inseria o nome amigável ou extado da api e clique no botão <strong>“Rename”</strong>:
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/07_doneRenameApi.png"
-                                  alt="Api renomeada">
-                              </p>
-
-                              <p><strong>Observação</strong>: Para esse manual do Insomnia será utilizado as apis de
-                                filmes disponibilizadas pelo site
-                                <a class="collapseUrl"
-                                  href="https://developers.themoviedb.org/3/movies/get-movie-details"
-                                  target="_blank">https://developers.themoviedb.org/3/movies/get-movie-details</a>
-                              </p>
-
-                              <p>Insira o endpoint e método do serviço:</p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/08_insertEndpointMth.png"
-                                  alt="Inserindo o metodo e endpoint do serviço">
-                              </p>
-
-                              <p>Os métodos de uma API REST são baseados no protocolo
-                                HTTP e são utilizados para especificar o tipo de operação que está sendo realizada na
-                                solicitação. Os principais métodos da API REST são:</p>
-
-                              <p>
-                                <strong>GET</strong>: usado para recuperar dados de um recurso existente.
-                                <br>
-                                <strong>POST</strong>: usado para criar um novo recurso.
-                                <br>
-                                <strong>PUT</strong>: usado para atualizar completamente um recurso existente.
-                                <br>
-                                <strong>PATCH</strong>: usado para atualizar parcialmente um recurso existente.
-                                <br>
-                                <strong>DELETE</strong>: usado para excluir um recurso existente.
-                                <br>
-                                <strong>OPTIONS</strong>: O método OPTIONS é usado para obter informações sobre as
-                                opções disponíveis para um recurso específico, como quais métodos HTTP são permitidos
-                                para o recurso ou quais cabeçalhos devem ser incluídos na solicitação.
-                                <br>
-                                <strong>HEAD</strong>: O método HEAD é semelhante ao método GET, mas retorna apenas os
-                                cabeçalhos de resposta, sem o corpo da resposta.
-                              </p>
-
-                              <p>
-                                O endpoint (URL) pode ser preenchido <strong>digitando</strong> ou com <strong>Ctrl –
-                                  C</strong> e <strong>Ctrl – V</strong>, exemplo preenchido:
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/09_doneInsertEndPoint.png"
-                                  alt="Endpoint/Url preenchida">
-                              </p>
-
-                              <p><strong>Observação 1</strong>: O endpoint(URL) que será utilizado para teste será o
-                                <strong>https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>
-                                    >&language=en-US</strong>, que formado por um <strong>Path Params</strong> que é
-                                o {movie_id} e duas <strong>Query String</strong> “api_key” e ”language”.
-                              </p>
-
-                              <p><strong>Observação 2</strong>: O <strong>Path Parameters</strong> são variáveis que
-                                fazem parte da URL do endpoint da API. Eles permitem que os desenvolvedores definam um
-                                valor variável em uma URL, que pode ser usado para especificar um recurso específico que
-                                o serviço deseja acessar.
-                              </p>
-
-                              <p><strong>Observação 3</strong>: A <strong>Query String</strong> é uma parte da
-                                URL que contém parâmetros adicionais que podem ser usados para filtrar, classificar ou
-                                paginar os resultados da solicitação. A Query String começa após o caractere de
-                                interrogação "?" na URL e consiste em um ou mais pares de chave/valor separados por "&".
-                              </p>
-
-                              <br>
-
-                              <p>
-                                Alterando o endpoint(URL) para inserir o id do filme e a chamada para execução da api:
-
-                                <br>
-                                <br>
-
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/10_configEndPoint.png"
-                                  alt="EndPoint Configurado">
-
-                                <br>
-                                <br>
-
-                                <strong>De:</strong>
-
-                                <br>
-
-                                https://api.themoviedb.org/3/movie/<strong>{movie_id}</strong>?api_key=<strong>api_key</strong>&language=en-US
-                              </p>
-
-                              <p>
-                                <strong>Para:</strong>
-                                <br>
-                                https://api.themoviedb.org/3/movie/<strong>561</strong>?api_key=<strong>02a91c06bc8383d5587a1b3529e82930</strong>&language=en-US
-
-                                <br>
-                                <br>
-
-                                <strong>Observação 1</strong>: O id do Filme pode ser capturado do site
-                                <a class="collapseUrl" href="https://www.themoviedb.org/"
-                                  target="_blank">https://www.themoviedb.org/</a>, onde ao clicar em algum filme será
-                                apresentando na url o id, conforme exemplo
-                                https://www.themoviedb.org/movie/<strong>561</strong>-constantine,
-                                id é o 561.
-                              </p>
-
-                              <p><strong>Observação 2</strong>: A chave que vamos utilizar nas apis do movies será
-                                <strong>02a91c06bc8383d5587a1b3529e82930</strong>, caso desejar possuir sua chave
-                                exclusiva se cadastre no site e na área logada em configurações acesse o menu
-                                <strong>“Api”</strong> para criar sua chave.
-                              </p>
-
-                              <p>Clique no botão <strong>“Send”</strong> para realizar execução do serviço:</p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/11_sendService.png"
-                                  alt="Requisição enviada">
-                              </p>
-
-                              <p>
-                                Após realizar execução do serviço deverá retornar o <strong>status</strong> da chamada e
-                                o <strong>response</strong> da consulta e/ou criação
-                                se houver do recurso executado:
-                              </p>
-
-                              <p>
-                                <img src="../../images/pages/ferramentas/Insomnia/topico06/12_responseStatus.png"
-                                  alt="Retorno do serviço com status e response">
-                              </p>
-
-                              <p>Os códigos de status de retorno mais comuns são:</p>
-
-                              <p>
-                                <strong>200 OK</strong>: Indica que a solicitação foi bem-sucedida e que o servidor
-                                retornou com sucesso os dados solicitados pelo cliente.
-
-                                <br>
-
-                                <strong>201 Created</strong>: Indica que a solicitação de criação de um novo recurso foi
-                                bem-sucedida e que o recurso foi criado com êxito.
-
-                                <br>
-
-                                <strong>204 No Content</strong>: Indica que a solicitação foi bem-sucedida, mas o
-                                servidor não tem conteúdo para retornar.
-
-                                <br>
-
-                                <strong>400 Bad Request</strong>: Indica que a solicitação enviada pelo cliente não pôde
-                                ser processada pelo servidor, pois contém dados inválidos ou incompletos.
-
-                                <br>
-
-                                <strong>401 Unauthorized</strong>: Indica que a solicitação não foi autorizada,
-                                geralmente devido a autenticação ou autorização falha.
-
-                                <br>
-
-                                <strong>404 Not Found</strong>: Indica que o recurso solicitado pelo cliente não foi
-                                encontrado no servidor.
-
-                                <br>
-
-                                <strong>500 Internal Server Error</strong>: Indica que ocorreu um erro interno no
-                                servidor ao processar a solicitação.
-                              </p>
-
-                            </div>
-                          </div>
-                        </div>
-
-                        <!– Criando setima sessão –>
-                          <div class="card">
-                            <div class="card-header cardColor" id="headingSeven">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                                  data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
-                                  onclick="scrollUp()">
-                                  7. Criando ambiente com variáveis definidas
-                                </button>
-                              </h5>
-                            </div>
-
-                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                              data-parent="#accordionMaster">
-                              <div class="card-body textCard imagesDefault">
-
-                                <p>
-                                  O ambiente <strong>(environment)</strong> no Insomnia é uma maneira de gerenciar
-                                  diferentes conjuntos
-                                  de variáveis que podem ser usados em suas solicitações API. Essas variáveis podem
-                                  ser usadas em suas solicitações API para diferentes fins, como autenticação,
-                                  autorização, configurações de conexão, configuração path da url, configuração de Query
-                                  String etc.
-                                </p>
-
-                                <p>Clique na opção <strong>No Environment</strong> e após em <strong>Manage
-                                    Environments</strong>:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/01_environment.png"
-                                    alt="Tela exibindo a opção No Enviroment">
-                                </p>
-
-                                <p>Clique na opção <strong>Sub Environments</strong> e após em
-                                  <strong>Environment</strong>:
-                                </p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/02_sub_environments.png"
-                                    alt="Tela exibindo o menu Sub Environments">
-                                </p>
-
-                                <p>Realize um duplo click para inserir o nome desejado para o ambiente:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/03_nameEnvironments.png"
-                                    alt="Renomeando o ambiente">
-                                </p>
-
-                                <p>Clique na opção <strong>Color</strong> e após em <strong>Assign Color</strong>:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/04_assginColor.png"
-                                    alt="Apresentando menu Assgin Color">
-                                </p>
-
-                                <p>Insira a cor desejada:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/05_insertColor.png"
-                                    alt="Selecionando a cor desejada">
-                                </p>
-
-                                <p>As variáveis são criadas como estrutura JSON, abaixo estamos criando a estrutura de
-                                  objeto com nome <strong>themoviedb</strong>, que é referencia da onde está exposta
-                                  api, pode ser inserido
-                                  qualquer nome que melhor relacione com seu projeto, após está sendo criado a variável
-                                  <strong>url</strong> e <strong>api-key</strong> para receber os valores
-                                  fixos para esse ambiente:
-                                </p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/06_confJson.png"
-                                    alt="Configurado o json do ambiente com as variaveis">
-                                </p>
-
-                                <p>Clique no botão <strong>“Close”</strong> para concluir a configuração.</p>
-
-                                <p>Clique na opção <strong>No Environment</strong> e após em <strong>Use
-                                    {Seu Ambiente}</strong>:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/07_useStage.png"
-                                    alt="Apresentado menu para seleção do ambiente">
-                                </p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/08_setAmb.png"
-                                    alt="Ambiente selecionado">
-                                </p>
-
-                                <p>Ambiente selecionado deverá ser apresentado conforme acima.</p>
-
-                                <p>Configurando a api <strong>Get Details</strong> utilizando as variáveis definidas no
-                                  ambiente:</p>
-
-                                <p>1- Delete a url <strong>https://api.themoviedb.org/3</strong>:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/09_urlGetDetails.png"
-                                    alt="Demonstrando a url a ser deletada">
-                                </p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/10_deleteUrl.png"
-                                    alt="Url deletada">
-                                </p>
-
-                                <p>Mantenha curso do mouse antes do <strong>/</strong> e clique em <strong>CTRL +
-                                    SPACE</strong>, será apresentada a variável de ambiente da url que foi criado,
-                                  selecione a variável:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/11_varAmbUrl.png"
-                                    alt="Variavel de ambiente demonstrada">
-                                </p>
-
-                                <p>Deverá ser apresentado a variável conforme abaixo:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/12_insertVarAmbUrl.png"
-                                    alt="Variavel Inserida da url">
-                                </p>
-
-                                <p>2- Delete o dado da Query String <strong>api_key</strong>:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/13_queryStringApiKey.png"
-                                    alt="Demonstrado a query string api-key a ser deletada">
-                                </p>
-
-                                <p>
-                                  <img
-                                    src="../../images/pages/ferramentas/Insomnia/topico07/14_deleteQueryStringApiKey.png"
-                                    alt="Query String api-key deletado">
-                                </p>
-
-                                <p>Mantenha curso do mouse após o <strong>=</strong> e clique em <strong>CTRL +
-                                    SPACE</strong>, será apresentada a variável de ambiente da api-key que foi criado,
-                                  selecione a variável:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/15_varAmbApiKey.png"
-                                    alt="Demonstrando a variavel api-key criada no ambiente para inserção">
-                                </p>
-
-                                <p>Deverá ser apresentado a variável conforme abaixo:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/16_insertVarAmbApiKey.png"
-                                    alt="Inserido a variavel de ambiente api-key">
-                                </p>
-
-                                <p>Clique no botão <strong>“Send”</strong> será efetuado a chamada do serviço com a
-                                  configuração das variáveis conforme abaixo:</p>
-
-                                <p>
-                                  <img src="../../images/pages/ferramentas/Insomnia/topico07/17_sendRequest.png"
-                                    alt="Teste de serviço realizado com sucesso com as variaveis configuradas na url">
-                                </p>
-
-                              </div>
-                            </div>
-                          </div>
-
-                          <!– Criando otiva sessão –>
-                            <div class="card">
-                              <div class="card-header cardColor" id="headingEight">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
-                                    onclick="scrollUp()">
-                                    8. Export de Collections de Apis
-                                  </button>
-                                </h5>
-                              </div>
-
-                              <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                                data-parent="#accordionMaster">
-                                <div class="card-body textCard imagesDefault">
-
-                                  <p>
-                                    Acessar a collection que deseja exporta e clique na opção
-                                    <strong>Import/Export</strong>:
-                                  </p>
-
-                                  <p>
-                                    <img
-                                      src="../../images/pages/ferramentas/Insomnia/topico08/01_importExportCollection.png"
-                                      alt="Opção para import e export de collection">
-                                  </p>
-
-                                  <p>
-                                    Clicar na opção <strong>Export Data</strong>, apresentara as possibilidades de
-                                    exportação conforme abaixo:
-                                  </p>
-
-                                  <p>
-                                    <img src="../../images/pages/ferramentas/Insomnia/topico08/03_exportCollectionM.png"
-                                      alt="Apresenta duas opções de exportação, todas collection do projeto ou collection especifica">
-                                  </p>
-
-                                  <p><strong>Nota:</strong> Primeira opção apresenta acima é para exportar apenas a
-                                    collection posicionada do projeto e a segunda opção para exportar todas as
-                                    collectionsdo projeto. No material irei seguir exportando apenas a collection
-                                    selecionada.
-                                  </p>
-
-                                  <p>Será apresentado a opção para exportar todos as apis ou apenas as desejadas, após
-                                    sua decisão clique no botão <strong>Export</strong>:</p>
-
-                                  <p>
-                                    <img src="../../images/pages/ferramentas/Insomnia/topico08/04_selectApis.png"
-                                      alt="Tela de export apresentando opção de exporta todas apis ou desejadas e disponibilizado o botão export">
-                                  </p>
-
-                                  <p>
-                                    Selecione a opção deseja para export, onde possui três opção disponíveis (
-                                    <strong>Insomnia v4
-                                      (JSON)</strong>, <strong>Insomnia v4 (YAML)</strong> e <strong>HAR – HTTP Archive
-                                      Format</strong> ), após escolha clique no botão Done:
-                                  </p>
-
-                                  <p>
-                                    Selecione a pasta desejada para salvar o arquivo, redefina o nome do arquivo para um
-                                    amigável e clique no botão <strong>Export</strong>:
-                                  </p>
-
-                                  <p>
-                                    <img
-                                      src="../../images/pages/ferramentas/Insomnia/topico08/08_selectFolderExport.png"
-                                      alt="Seleção e rename do arquivo para salvar o export">
-                                  </p>
-
-                                  <p>Collection exportada com sucesso conforme abaixo:</p>
-
-                                  <p>
-                                    <img src="../../images/pages/ferramentas/Insomnia/topico08/09_doneExport.png"
-                                      alt="Demonstrado o arquivo exportado na pasta selecionada no passo anterior">
-                                  </p>
-
-                                </div>
-                              </div>
-                            </div>
-
-                            <!– Criando nona sessão –>
-                              <div class="card">
-                                <div class="card-header cardColor" id="headingNine">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse"
-                                      data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
-                                      onclick="scrollUp()">
-                                      9. Import de Collections de Apis
-                                    </button>
-                                  </h5>
-                                </div>
-
-                                <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
-                                  data-parent="#accordionMaster">
-                                  <div class="card-body textCard imagesDefault">
-
-                                    <p>Posicione no projeto desejado para importar uma collection e clique na opção
-                                      <strong>Import From</strong> > <strong>File</strong>:
-                                    </p>
-
-                                    <p>
-                                      <img src="../../images/pages/ferramentas/Insomnia/topico09/01_selectProject.png"
-                                        alt="Selecionado o projeto e clicando na opção de import file">
-                                    </p>
-
-                                    <p>Selecione a pasta que está o arquivo da collection e clique no botão
-                                      <strong>Import</strong>:
-                                    </p>
-
-                                    <p>
-                                      <img
-                                        src="../../images/pages/ferramentas/Insomnia/topico09/02_selectionCollection.png"
-                                        alt="Selecionando pasta que contem o arquivo com collection e clicando em import">
-                                    </p>
-
-                                    <p>Selecione a opção <strong>Request Collection</strong>:</p>
-
-                                    <p>
-                                      <img
-                                        src="../../images/pages/ferramentas/Insomnia/topico09/03_requestCollection.png"
-                                        alt="Apresentado as opções Request Collection e Design Document">
-                                    </p>
-
-                                    <p>Import deverá ser realizado e apresentara a mensagem de sucesso abaixo:</p>
-
-                                    <p>
-                                      <img src="../../images/pages/ferramentas/Insomnia/topico09/04_importDone.png"
-                                        alt="Mensagem apresentando sucesso no import">
-                                    </p>
-
-                                    <p>Collection importada só clicar sobre ela que será apresentado as apis para
-                                      uso já configuradas:</p>
-
-                                    <p>
-                                      <img src="../../images/pages/ferramentas/Insomnia/topico09/05_clickCollection.png"
-                                        alt="Clicando na collection importada">
-                                    </p>
-
-                                    <p>
-                                      <img src="../../images/pages/ferramentas/Insomnia/topico09/06_viewApis.png"
-                                        alt="Apresentado as collections configuradas">
-                                    </p>
-
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!– Criando decima sessão –>
-                                <div class="card">
-                                  <div class="card-header cardColor" id="headingTen">
-                                    <h5 class="mb-0">
-                                      <button class="btn btn-link collapsed titleCor" type="button"
-                                        data-toggle="collapse" data-target="#collapseTen" aria-expanded="false"
-                                        aria-controls="collapseTen" onclick="scrollUp()">
-                                        10. Configurando Response Body Attribute para execução automática de serviços
-                                      </button>
-                                    </h5>
-                                  </div>
-
-                                  <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
-                                    data-parent="#accordionMaster">
-                                    <div class="card-body textCard imagesDefault">
-
-                                      <p>Para seguir com o processo de configurar o acionamento de uma chamada em outra
-                                        api configure as apis abaixo:</p>
-
-                                      <p>Documentação das apis caso necessário: <a class="collapseUrl"
-                                          href="https://developers.themoviedb.org/3/getting-started/introduction"
-                                          target="_blank">https://developers.themoviedb.org/3/getting-started/introduction</a>
-                                      </p>
-
-                                      <p>1- Serviço <strong>Create Request Token</strong> com método
-                                        <strong>GET</strong>:
-                                      </p>
-
-                                      <p>
-                                        https://api.themoviedb.org/3/authentication/token/new?api_key=02a91c06bc8383d5587a1b3529e82930
-                                      </p>
-
-                                      <hr>
-
-                                      <p>2- Serviço <strong>Create Session</strong> com método <strong>POST</strong>:
-                                      </p>
-
-                                      <p>
-                                        https://api.themoviedb.org/3/authentication/session/new?api_key=02a91c06bc8383d5587a1b3529e82930
-                                      </p>
-
-                                      <p>
-                                        <strong>Body</strong>:
-                                        <br>
-                                        {
-                                        "request_token": "6bc047b88f669d1fb86574f06381005d93d3517a"
-                                        }
-                                      </p>
-
-                                      <hr>
-
-                                      <p>3- Serviço <strong>Rate Movie</strong> com método <strong>POST</strong>:</p>
-
-                                      <p>
-                                        https://api.themoviedb.org/3/movie/561/rating?api_key=02a91c06bc8383d5587a1b3529e82930&session_id=1
-                                      </p>
-
-                                      <p><Strong>Body</Strong>:
-                                        <br>
-                                        {
-                                        "value": 8.5
-                                        }
-                                      </p>
-
-                                      <hr>
-
-                                      <p>Execute o serviço para gerar o token:</p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/01_createToken.png"
-                                          alt="Serviço para geração do token">
-                                      </p>
-
-                                      <p>
-                                        Copiei o token (campo <strong>request_token</strong>) gerado sem as aspas na url
-                                        https://www.themoviedb.org/authenticate/<strong>f05c4eba910cdae41e3019d35c9a5186e653b8e7</strong>
-                                        e execute no navegador para autorizar o token:
-                                      </p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/02_tokenAuth.png"
-                                          alt="Copiando o link no navegador e apresentando aprovação">
-                                      </p>
-
-                                      <hr>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/03_authDone.png"
-                                          alt="Autenticação realizada">
-                                      </p>
-
-                                      <p><strong>Observação</strong>: Processo realizado acima para simular autenticação
-                                        do token de uma forma fácil para ser utilizado nos próximos serviços.</p>
-
-                                      <p>
-                                        No serviço <strong>Create Seesion</strong>, insira o token gerado e autorizado
-                                        na api anterior no body no campo <strong>request_token</strong>, porém
-                                        <strong>não execute</strong> o serviço:
-                                      </p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/04_createSession.png"
-                                          alt="Inserindo o token gerado no body json">
-                                      </p>
-
-                                      <p>Caso tenha duvida como inserir um body em uma api, clique conforme <strong>item
-                                          1</strong>, selecione a opção JSON (No caso nossa api exposta está nesse
-                                        formato) conforme <strong>item 2</strong> e digite ou copie o campo no formato
-                                        Json conforme <strong>item 3</strong>:</p>
-
-                                      <p>
-                                        {
-                                        "request_token": "f05c4eba910cdae41e3019d35c9a5186e653b8e7"
-                                        }
-                                      </p>
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/05_createBodyJson.png"
-                                          alt="Criando Body Json">
-                                      </p>
-
-                                      <p>Na Query String “<strong>session_id</strong>” após o <strong>=</strong> clique
-                                        em <strong>CTRL + SPACE</strong>, onde apresentará as opções de configuração:
-                                      </p>
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/06_configQueryString.png"
-                                          alt="Clicando em ctrl + space para abrir opções de seleção">
-                                      </p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/07_selectionOp.png"
-                                          alt="Apresentando lista de opção para configuração">
-                                      </p>
-
-                                      <p>Digite “<strong>resp</strong>” e selecione a opção <strong>Response Body
-                                          Attribute</strong>:</p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/08_respAttr.png"
-                                          alt="Selecionando opção Response Body Attribute">
-                                      </p>
-
-                                      <p>Clique sobre o Response Body Attribute criado:</p>
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/09_clickRespBAttr.png"
-                                          alt="Clicando sobre o response criado para configuração">
-                                      </p>
-
-                                      <p>Será apresentando a tela de configuração:</p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/10_editTag.png"
-                                          alt="Tela para configuração apresentada">
-                                      </p>
-
-                                      <p>Em <strong>Request</strong> seleciona a api <strong>Create Session</strong>
-                                        para que toda vez que executar api <strong>Rate Movie</strong> seja executado a
-                                        api
-                                        <strong>Create Session</strong> para gerar o <strong>session_id</strong>
-                                        automático:
-                                      </p>
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/11_requestSelection.png"
-                                          alt="Selecionando o serviço Create Session">
-                                      </p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/12_doneRequest.png"
-                                          alt="Request selecionada">
-                                      </p>
-
-                                      <p>Em <strong>Filter (JSONPath or XPath)</strong> inserira o operador
-                                        <strong>$.</strong> + <strong>campo</strong> desejado para recuperar no response
-                                        na execução da api <strong>Create Session</strong> irá ser utilizado o conteúdo
-                                        do campo <strong>session_id</strong>:
-                                      </p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/13_doneFilter.png"
-                                          alt="Finalizado a configuração do campo session_id do response">
-                                      </p>
-
-                                      <p>Em <strong>Trigger Behavior</strong> será configurado se será reenviada a
-                                        execução do serviço <strong>Create Session</strong> que está sendo utilizando
-                                        para obter o <strong>session_id</strong> automático. No tutorial vamos utilizar
-                                        opção <strong>Awalys –
-                                          resend request When needed</strong>, para acionar sempre o serviço para gerar
-                                        novo <strong>session_id</strong>:
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/14_triggerBehavior.png"
-                                          alt="Demostrando todas opções para configuração">
-                                      </p>
-
-                                      <p>
-                                        <img src="../../images/pages/ferramentas/Insomnia/topico10/15_alwaysResend.png"
-                                          alt="Selecionado a opção Awalys – resend request When needed">
-                                      </p>
-
-                                      <p>Clique no botão <strong>Done</strong> para finalizar a configuração:</p>
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/16_doneConfigRespBAttr.png"
-                                          alt="Configuração finalizada ao clicar no botão Done">
-                                      </p>
-
-                                      <p>Na api <strong>Rate Movie</strong> insira a nota desejada do filme no campo
-                                        <strong>value</strong> do body e
-                                        execute o serviço, será gerado um <strong>session_id</strong> de forma
-                                        automática acionado a api
-                                        <strong>Create Session</strong> e inserindo na Query String
-                                        <strong>session_id</strong> da api <strong>Rate Movie</strong>:
-                                      </p>
-
-                                      <p>
-                                        <img
-                                          src="../../images/pages/ferramentas/Insomnia/topico10/17_executeService.png"
-                                          alt="Serviço executado com sucesso">
-                                      </p>
-
-                                      <p><strong>Nota:</strong> Documentação do Insomnia caso queira se aprofundar nas
-                                        configurações possíveis <a class="collapseUrl"
-                                          href="https://docs.insomnia.rest/insomnia/chaining-requests"
-                                          target="_blank">https://docs.insomnia.rest/insomnia/chaining-requests</a>
-                                      </p>
-
-                                      <p><strong>Observação:</strong> Automatizar a execução de um serviço em outro pode
-                                        ser realizado em quando parte da api, no caso do tutorial foi aplicado em uma
-                                        Query String, porém pode ser aplicado em um header, auth, campo desejado do body
-                                        etc.</p>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <!– Criando decima primeira sessão –>
-                                  <div class="card">
-                                    <div class="card-header cardColor" id="headingEleven">
-                                      <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed titleCor" type="button"
-                                          data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false"
-                                          aria-controls="collapseEleven" onclick="scrollUp()">
-                                          11. Extraindo e importando cUrl de uma Api
-                                        </button>
-                                      </h5>
-                                    </div>
-
-                                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
-                                      data-parent="#accordionMaster">
-                                      <div class="card-body textCard imagesDefault">
-
-                                        <p>
-                                          Para extrair o cUrl com a configuração deu uma api para ser compartilhada
-                                          clique na opção <strong>Generate Client Code</strong>:
-                                        </p>
-
-                                        <p>
-                                          <img
-                                            src="../../images/pages/ferramentas/Insomnia/topico11/01_generateClientCode.png"
-                                            alt="Selecionando a opção Generate Client Code">
-                                        </p>
-
-                                        <p>Irá apresentar o cUrl montando para compartilhamento para import no Insomnia:
-                                        </p>
-
-                                        <p>
-                                          <img src="../../images/pages/ferramentas/Insomnia/topico11/02_exportCurl.png"
-                                            alt="Exporte apresentado para copia">
-                                        </p>
-
-                                        <p><strong>Observação</strong>: Existe a opção de selecionar outras opção de
-                                          geração de cUrl alterando o Shell para outro desejado como Java, toda
-                                          documentação do Insomnia pode ser encontrada em <a class="collapseUrl"
-                                            href="https://docs.insomnia.rest/insomnia/get-started"
-                                            target="_blank">https://docs.insomnia.rest/insomnia/get-started</a></p>
-
-                                        <p>Uma das formas de <strong>import</strong> do cURL pode ser criando uma nova
-                                          api <strong>Http
-                                            Request</strong> conforme abaixo:</p>
-
-                                        <p>
-                                          <img
-                                            src="../../images/pages/ferramentas/Insomnia/topico11/03_selectionFolderApis.png"
-                                            alt="Clicando na pasta para apresentar a opção New Http Request">
-                                        </p>
-
-                                        <p><img
-                                            src="../../images/pages/ferramentas/Insomnia/topico11/04_newHttpRequest.png"
-                                            alt="Nova api criada"></p>
-
-                                        <p>Copie na nova api na url o cUrl que deseja importar:</p>
-
-                                        <p>
-                                          <img src="../../images/pages/ferramentas/Insomnia/topico11/05_newRequest.png"
-                                            alt="Copiando na url o curl">
-                                        </p>
-
-                                        <p> Será configurado de forma automática a api alterando seu método, criando o
-                                          body e inserindo o header conforme abaixo:</p>
-
-                                        <p>
-                                          <img src="../../images/pages/ferramentas/Insomnia/topico11/06_doneImport.png"
-                                            alt="Configuração automatica da api realizada">
-                                        </p>
-
-                                        <p><strong>Observação</strong>: Foi utilizado o cUrl abaixo para a copia na url
-                                          e configuração:
-                                        </p>
-
-                                        <p>
-                                          curl --request POST \
-                                          --url
-                                          'https://api.themoviedb.org/3/authentication/session/new?api_key=02a91c06bc8383d5587a1b3529e82930'
-                                          \
-                                          --header 'Content-Type: application/json' \
-                                          --data '{
-                                          "request_token": "f05c4eba910cdae41e3019d35c9a5186e653b8e7"
-                                          }'
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <!– Criando decima segunda sessão –>
-                                    <div class="card">
-                                      <div class="card-header cardColor" id="headingTwelve">
-                                        <h5 class="mb-0">
-                                          <button class="btn btn-link collapsed titleCor" type="button"
-                                            data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false"
-                                            aria-controls="collapseTwelve" onclick="scrollUp()">
-                                            12. Filtrando o Response
-                                          </button>
-                                        </h5>
-                                      </div>
-
-                                      <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
-                                        data-parent="#accordionMaster">
-                                        <div class="card-body textCard imagesDefault">
-
-                                          <p>Para casos do response retorna com muitos dados, pode ser filtrado apenas a
-                                            estrutura/tag desejada utilizando o operador <strong>$.</strong> +
-                                            <strong>nome</strong> conforme exemplo abaixo:
-                                          </p>
-
-                                          <p>
-                                            <img src="../../images/pages/ferramentas/Insomnia/topico12/01_filter.png"
-                                              alt="utilizando operador $.">
-                                          </p>
-
-                                          <p>Foi inserido o filtro para o array <strong>genres</strong> utilizando o
-                                            operador <strong>$.genres</strong> e clicando em <strong>Enter</strong> do
-                                            teclado:</p>
-
-                                          <p>
-                                            <img src="../../images/pages/ferramentas/Insomnia/topico12/02_genres.png"
-                                              alt="Filtro no array genres realizado">
-                                          </p>
-
-                                          <p><strong>Nota</strong>: Estrutura do Array de gênero do filme:</p>
-
-                                          <p><strong>"genres"</strong>: [
-                                            {
-                                            "id": 14,
-                                            "name": "Fantasy"
-                                            },
-                                            {
-                                            "id": 28,
-                                            "name": "Action"
-                                            },
-                                            {
-                                            "id": 27,
-                                            "name": "Horror"
-                                            }
-                                            ],
-                                          </p>
-
-                                          <p>Para retornar o response completo só apagar o filtro:</p>
-
-                                          <p>
-                                            <img
-                                              src="../../images/pages/ferramentas/Insomnia/topico12/03_doneFilter.png"
-                                              alt="Apagado o filtro e retornado o response completo">
-                                          </p>
-
-                                        </div>
-                                      </div>
-                                    </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/popper.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/scrollUp.js"></script>
-    <script src="../../js/downloadPDF.js"></script>
-</body>
 
+            <!– Criando segunda sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="scrollUp()">2. Instalação Insomnia</button>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>
+                    Realize o download do Insomnia no site
+                    <a class="collapseUrl" href="https://insomnia.rest/download" target="_blank">https://insomnia.rest/download</a>:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico02/01_download.png" alt="Site oficial Insomnia, posicionado em download" />
+                  </p>
+
+                  <p>Clique duas vezes sobre o aplicativo baixado:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico02/02_appInsomnia.png" alt="Pasta onde está o aplicativo baixado" />
+                  </p>
+
+                  <p>Deverá apresentar aplicação aberta conforme abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico02/03_openInsomnia.png" alt="Insomnia aberto" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando terceira sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="scrollUp()">
+                    3. Instalando plugins externos
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Clique no menu <strong>Application</strong> na opção <strong>Preferences</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico03/01_applicationPreferences.png" alt="Clicando no menu application no item preferences" />
+                  </p>
+
+                  <p> Clique na aba <strong>Plugins</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico03/02_menuPlugin.png" alt="Clicando na aba Plugins" />
+                  </p>
+
+                  <p>Preencha o campo <strong>“npm-package-name”</strong> com o nome do plugin desejado e clique no botão <strong>Install Plugin</strong>:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico03/03_emptyField.png" alt="Posicionado no campo npm package name" />
+                  </p>
+
+                  <p> Plugin do exemplo <strong>insomnia-plugin-theme-dracula</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico03/04_filledField.png" alt="Campo preenchido e disponivel para clicar no botão Install Plugin" />
+                  </p>
+
+                  <p> Após clicar no botão <strong>Install Plugin</strong> deverá apresentar a instalação com sucesso conforme abaixo: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico03/05_doneInstall.png" alt="Plugin Instalado" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando quarta sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="scrollUp()">4. Alterando o Theme Default</button>
+                </h5>
+              </div>
+
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Clique no menu <strong>Application</strong> na opção <strong>Preferences</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico04/01_applicationPreferences.png" alt="Clicando no menu application no item preferences" />
+                  </p>
+
+                  <p> Clique na aba <strong>Themes</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico04/02_menuThemes.png" alt="Clicando na aba Themes" />
+                  </p>
+
+                  <p> Selecione o <strong>theme</strong> desejado clicando sobre ele e após feche tela de preferências: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico04/04_doneSelectTheme.png" alt="Theme selecionado" />
+                  </p>
+
+                  <p> <strong>Observação</strong>: Theme aplicado com sucesso conforme o exemplo acima. </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando quinta sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="scrollUp()">
+                    5. Criando o projeto e a collection de apis
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Clique no botão <strong>Personal Projects</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico05/01_personalProjects.png" alt="Clicando no botão Personal Projects" />
+                  </p>
+
+                  <p> Clique em criar um novo projeto conforme <strong>item 1</strong>, após insira o nome desejado para o projeto e clique no botão <strong>"Create"</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico05/02_createProject.png" alt="Criando o projeto inserido nome e clicando no botão Create" />
+                  </p>
+
+                  <p> Clique na opção <strong>“New Collection”</strong>, insira o nome e clique no botão<strong>“Create”</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico05/03_createCollection.png" alt="Criando a collection inserindo nome e clicando no botão Create" />
+                  </p>
+
+                  <p>Será direcionado para collection criada conforme abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico05/04_directedCollection.png" alt="Direcionado para collection criada" />
+                  </p>
+
+                  <p>
+                    Para retornar ao projeto para selecionar e/ou criar outras collections, clique sobre o nome do projeto conforme <strong>item 1</strong> ou clique sobre a opção <strong>“Personal Projects”</strong> conforme
+                    <strong>item 2</strong>:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico05/05_returnProject.png" alt="Retornando para página de projetos para selecionar e/ou criar novas collections" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando sexta sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="scrollUp()">
+                    6. Configurando a primeira Api rest
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Selecione o <strong>projeto</strong> e a <strong>collection</strong> que deseja configurar a primeira Api rest. Exemplo abaixo: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/01_selectionProjectCollection.png" alt="Selecionado o projeto e a collection" />
+                  </p>
+
+                  <p> Clique na opção <strong>“New Folder”</strong> para criação e melhor organização para iniciar configuração de uma Api rest (esse passo não é obrigatório, apenas é uma boa pratica de organização): </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/02_createFolder.png" alt="Selecionado a opção para criar pasta para inserir apis" />
+                  </p>
+
+                  <p> Insira o <strong>nome</strong> desejado e clique no botão <strong>“Create”</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/03_renameFolder.png" alt="Inserido nome da pasta para inserir apis" />
+                  </p>
+
+                  <p> Seleciona na pasta criada a opção <strong>“New HTTP Request”</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/04_selectMenuFolder.png" alt="Selecionado na pasta criada abertura do menu" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/05_selectHttpRequest.png" alt="Selecioando a opção New Http Request" />
+                  </p>
+
+                  <p> Clique com o botão direto do mouse sobre a api criada e selecione a opção <strong>“Rename”</strong> para inserir o nome amigável para a nova api: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/06_renameApi.png" alt="Inserindo o nome amigavel para api" />
+                  </p>
+
+                  <p> Inseria o nome amigável ou extado da api e clique no botão <strong>“Rename”</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/07_doneRenameApi.png" alt="Api renomeada" />
+                  </p>
+
+                  <p>
+                    <strong>Observação</strong>: Para esse manual do Insomnia será utilizado as apis de filmes disponibilizadas pelo site
+                    <a class="collapseUrl" href="https://developers.themoviedb.org/3/movies/get-movie-details" target="_blank">https://developers.themoviedb.org/3/movies/get-movie-details</a>
+                  </p>
+
+                  <p>Insira o endpoint e método do serviço:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/08_insertEndpointMth.png" alt="Inserindo o metodo e endpoint do serviço" />
+                  </p>
+
+                  <p>Os métodos de uma API REST são baseados no protocolo HTTP e são utilizados para especificar o tipo de operação que está sendo realizada na solicitação. Os principais métodos da API REST são:</p>
+
+                  <p>
+                    <strong>GET</strong>: usado para recuperar dados de um recurso existente.
+
+                    <br />
+                    <strong>POST</strong>: usado para criar um novo recurso.
+
+                    <br />
+                    <strong>PUT</strong>: usado para atualizar completamente um recurso existente.
+
+                    <br />
+                    <strong>PATCH</strong>: usado para atualizar parcialmente um recurso existente.
+
+                    <br />
+                    <strong>DELETE</strong>: usado para excluir um recurso existente.
+
+                    <br />
+                    <strong>OPTIONS</strong>: O método OPTIONS é usado para obter informações sobre as opções disponíveis para um recurso específico, como quais métodos HTTP são permitidos para o recurso ou quais cabeçalhos devem ser
+                    incluídos na solicitação.
+
+                    <br />
+                    <strong>HEAD</strong>: O método HEAD é semelhante ao método GET, mas retorna apenas os cabeçalhos de resposta, sem o corpo da resposta.
+                  </p>
+
+                  <p> O endpoint (URL) pode ser preenchido <strong>digitando</strong> ou com <strong>Ctrl – C</strong> e <strong>Ctrl – V</strong>, exemplo preenchido: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/09_doneInsertEndPoint.png" alt="Endpoint/Url preenchida" />
+                  </p>
+
+                  <p>
+                    <strong>Observação 1</strong>: O endpoint(URL) que será utilizado para teste será o <strong>https://api.themoviedb.org/3/movie/{movie_id}?api_key=<"api_key"> &language=en-US</strong>, que formado por um
+                    <strong>Path Params</strong> que é o {movie_id} e duas <strong>Query String</strong> “api_key” e ”language”.
+                  </p>
+
+                  <p>
+                    <strong>Observação 2</strong>: O <strong>Path Parameters</strong> são variáveis que fazem parte da URL do endpoint da API. Eles permitem que os desenvolvedores definam um valor variável em uma URL, que pode ser usado
+                    para especificar um recurso específico que o serviço deseja acessar.
+                  </p>
+
+                  <p>
+                    <strong>Observação 3</strong>: A <strong>Query String</strong> é uma parte da URL que contém parâmetros adicionais que podem ser usados para filtrar, classificar ou paginar os resultados da solicitação. A Query String
+                    começa após o caractere de interrogação "?" na URL e consiste em um ou mais pares de chave/valor separados por "&".
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Alterando o endpoint(URL) para inserir o id do filme e a chamada para execução da api:
+
+                    <br />
+                    <br />
+
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/10_configEndPoint.png" alt="EndPoint Configurado" />
+
+                    <br />
+                    <br />
+
+                    <strong>De:</strong>
+
+                    <br />
+
+                    https://api.themoviedb.org/3/movie/<strong>{movie_id}</strong>?api_key=<strong>api_key</strong>&language=en-US
+                  </p>
+
+                  <p>
+                    <strong>Para:</strong>
+
+                    <br />
+
+                    https://api.themoviedb.org/3/movie/<strong>561</strong>?api_key=<strong>02a91c06bc8383d5587a1b3529e82930</strong>&language=en-US
+
+                    <br />
+                    <br />
+
+                    <strong>Observação 1</strong>: O id do Filme pode ser capturado do site <a class="collapseUrl" href="https://www.themoviedb.org/" target="_blank">https://www.themoviedb.org/</a>, onde ao clicar em algum filme será
+                    apresentando na url o id, conforme exemplo https://www.themoviedb.org/movie/<strong>561</strong>-constantine, id é o 561.
+                  </p>
+
+                  <p>
+                    <strong>Observação 2</strong>: A chave que vamos utilizar nas apis do movies será <strong>02a91c06bc8383d5587a1b3529e82930</strong>, caso desejar possuir sua chave exclusiva se cadastre no site e na área logada em
+                    configurações acesse o menu <strong>“Api”</strong> para criar sua chave.
+                  </p>
+
+                  <p> Clique no botão <strong>“Send”</strong> para realizar execução do serviço: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/11_sendService.png" alt="Requisição enviada" />
+                  </p>
+
+                  <p> Após realizar execução do serviço deverá retornar o <strong>status</strong> da chamada e o <strong>response</strong> da consulta e/ou criação se houver do recurso executado: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico06/12_responseStatus.png" alt="Retorno do serviço com status e response" />
+                  </p>
+
+                  <p>Os códigos de status de retorno mais comuns são:</p>
+
+                  <p>
+                    <strong>200 OK</strong>: Indica que a solicitação foi bem-sucedida e que o servidor retornou com sucesso os dados solicitados pelo cliente.
+
+                    <br />
+
+                    <strong>201 Created</strong>: Indica que a solicitação de criação de um novo recurso foi bem-sucedida e que o recurso foi criado com êxito.
+
+                    <br />
+
+                    <strong>204 No Content</strong>: Indica que a solicitação foi bem-sucedida, mas o servidor não tem conteúdo para retornar.
+
+                    <br />
+
+                    <strong>400 Bad Request</strong>: Indica que a solicitação enviada pelo cliente não pôde ser processada pelo servidor, pois contém dados inválidos ou incompletos.
+
+                    <br />
+
+                    <strong>401 Unauthorized</strong>: Indica que a solicitação não foi autorizada, geralmente devido a autenticação ou autorização falha.
+
+                    <br />
+
+                    <strong>404 Not Found</strong>: Indica que o recurso solicitado pelo cliente não foi encontrado no servidor.
+
+                    <br />
+
+                    <strong>500 Internal Server Error</strong>: Indica que ocorreu um erro interno no servidor ao processar a solicitação.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando setima sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" onclick="scrollUp()">
+                    7. Criando ambiente com variáveis definidas
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>
+                    O ambiente <strong>(environment)</strong> no Insomnia é uma maneira de gerenciar diferentes conjuntos de variáveis que podem ser usados em suas solicitações API. Essas variáveis podem ser usadas em suas solicitações API
+                    para diferentes fins, como autenticação, autorização, configurações de conexão, configuração path da url, configuração de Query String etc.
+                  </p>
+
+                  <p> Clique na opção <strong>No Environment</strong> e após em <strong>Manage Environments</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/01_environment.png" alt="Tela exibindo a opção No Enviroment" />
+                  </p>
+
+                  <p> Clique na opção <strong>Sub Environments</strong> e após em <strong>Environment</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/02_sub_environments.png" alt="Tela exibindo o menu Sub Environments" />
+                  </p>
+
+                  <p>Realize um duplo click para inserir o nome desejado para o ambiente:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/03_nameEnvironments.png" alt="Renomeando o ambiente" />
+                  </p>
+
+                  <p> Clique na opção <strong>Color</strong> e após em <strong>Assign Color</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/04_assginColor.png" alt="Apresentando menu Assgin Color" />
+                  </p>
+
+                  <p>Insira a cor desejada:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/05_insertColor.png" alt="Selecionando a cor desejada" />
+                  </p>
+
+                  <p>
+                    As variáveis são criadas como estrutura JSON, abaixo estamos criando a estrutura de objeto com nome <strong>themoviedb</strong>, que é referencia da onde está exposta api, pode ser inserido qualquer nome que melhor
+                    relacione com seu projeto, após está sendo criado a variável <strong>url</strong> e <strong>api-key</strong> para receber os valores fixos para esse ambiente:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/06_confJson.png" alt="Configurado o json do ambiente com as variaveis" />
+                  </p>
+
+                  <p> Clique no botão <strong>“Close”</strong> para concluir a configuração. </p>
+
+                  <p> Clique na opção <strong>No Environment</strong> e após em <strong>Use {Seu Ambiente}</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/07_useStage.png" alt="Apresentado menu para seleção do ambiente" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/08_setAmb.png" alt="Ambiente selecionado" />
+                  </p>
+
+                  <p>Ambiente selecionado deverá ser apresentado conforme acima.</p>
+
+                  <p> Configurando a api <strong>Get Details</strong> utilizando as variáveis definidas no ambiente: </p>
+
+                  <p> 1- Delete a url <strong>https://api.themoviedb.org/3</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/09_urlGetDetails.png" alt="Demonstrando a url a ser deletada" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/10_deleteUrl.png" alt="Url deletada" />
+                  </p>
+
+                  <p> Mantenha curso do mouse antes do <strong>/</strong> e clique em <strong>CTRL + SPACE</strong>, será apresentada a variável de ambiente da url que foi criado, selecione a variável: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/11_varAmbUrl.png" alt="Variavel de ambiente demonstrada" />
+                  </p>
+
+                  <p>Deverá ser apresentado a variável conforme abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/12_insertVarAmbUrl.png" alt="Variavel Inserida da url" />
+                  </p>
+
+                  <p> 2- Delete o dado da Query String <strong>api_key</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/13_queryStringApiKey.png" alt="Demonstrado a query string api-key a ser deletada" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/14_deleteQueryStringApiKey.png" alt="Query String api-key deletado" />
+                  </p>
+
+                  <p> Mantenha curso do mouse após o <strong>=</strong> e clique em <strong>CTRL + SPACE</strong>, será apresentada a variável de ambiente da api-key que foi criado, selecione a variável: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/15_varAmbApiKey.png" alt="Demonstrando a variavel api-key criada no ambiente para inserção" />
+                  </p>
+
+                  <p>Deverá ser apresentado a variável conforme abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/16_insertVarAmbApiKey.png" alt="Inserido a variavel de ambiente api-key" />
+                  </p>
+
+                  <p> Clique no botão <strong>“Send”</strong> será efetuado a chamada do serviço com a configuração das variáveis conforme abaixo: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico07/17_sendRequest.png" alt="Teste de serviço realizado com sucesso com as variaveis configuradas na url" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando otiva sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingEight">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" onclick="scrollUp()">
+                    8. Export de Collections de Apis
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Acessar a collection que deseja exporta e clique na opção <strong>Import/Export</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico08/01_importExportCollection.png" alt="Opção para import e export de collection" />
+                  </p>
+
+                  <p> Clicar na opção <strong>Export Data</strong>, apresentara as possibilidades de exportação conforme abaixo: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico08/03_exportCollectionM.png" alt="Apresenta duas opções de exportação, todas collection do projeto ou collection especifica" />
+                  </p>
+
+                  <p>
+                    <strong>Nota:</strong> Primeira opção apresenta acima é para exportar apenas a collection posicionada do projeto e a segunda opção para exportar todas as collectionsdo projeto. No material irei seguir exportando apenas a
+                    collection selecionada.
+                  </p>
+
+                  <p> Será apresentado a opção para exportar todos as apis ou apenas as desejadas, após sua decisão clique no botão <strong>Export</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico08/04_selectApis.png" alt="Tela de export apresentando opção de exporta todas apis ou desejadas e disponibilizado o botão export" />
+                  </p>
+
+                  <p>
+                    Selecione a opção deseja para export, onde possui três opção disponíveis (<strong>Insomnia v4 (JSON)</strong>,<strong>Insomnia v4 (YAML)</strong> e <strong>HAR – HTTP Archive Format</strong>, após escolha clique no botão
+                    Done:)
+                  </p>
+
+                  <p> Selecione a pasta desejada para salvar o arquivo, redefina o nome do arquivo para um amigável e clique no botão <strong>Export</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico08/08_selectFolderExport.png" alt="Seleção e rename do arquivo para salvar o export" />
+                  </p>
+
+                  <p>Collection exportada com sucesso conforme abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico08/09_doneExport.png" alt="Demonstrado o arquivo exportado na pasta selecionada no passo anterior" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando nona sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingNine">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" onclick="scrollUp()">
+                    9. Import de Collections de Apis
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Posicione no projeto desejado para importar uma collection e clique na opção <strong>Import From</strong> > <strong>File</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico09/01_selectProject.png" alt="Selecionado o projeto e clicando na opção de import file" />
+                  </p>
+
+                  <p> Selecione a pasta que está o arquivo da collection e clique no botão <strong>Import</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico09/02_selectionCollection.png" alt="Selecionando pasta que contem o arquivo com collection e clicando em import" />
+                  </p>
+
+                  <p> Selecione a opção <strong>Request Collection</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico09/03_requestCollection.png" alt="Apresentado as opções Request Collection e Design Document" />
+                  </p>
+
+                  <p>Import deverá ser realizado e apresentara a mensagem de sucesso abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico09/04_importDone.png" alt="Mensagem apresentando sucesso no import" />
+                  </p>
+
+                  <p>Collection importada só clicar sobre ela que será apresentado as apis para uso já configuradas:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico09/05_clickCollection.png" alt="Clicando na collection importada" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico09/06_viewApis.png" alt="Apresentado as collections configuradas" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando decima sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingTen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen" onclick="scrollUp()">
+                    10. Configurando Response Body Attribute para execução automática de serviços
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>Para seguir com o processo de configurar o acionamento de uma chamada em outra api configure as apis abaixo:</p>
+
+                  <p>
+                    Documentação das apis caso necessário:
+                    <a class="collapseUrl" href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank">https://developers.themoviedb.org/3/getting-started/introduction</a>
+                  </p>
+
+                  <p> 1- Serviço <strong>Create Request Token</strong> com método <strong>GET</strong>: </p>
+
+                  <p>https://api.themoviedb.org/3/authentication/token/new?api_key=02a91c06bc8383d5587a1b3529e82930</p>
+
+                  <hr />
+
+                  <p> 2- Serviço <strong>Create Session</strong> com método <strong>POST</strong>: </p>
+
+                  <p>https://api.themoviedb.org/3/authentication/session/new?api_key=02a91c06bc8383d5587a1b3529e82930</p>
+
+                  <p>
+                    <strong>Body</strong>:
+
+                    <br />
+
+                    { "request_token": "6bc047b88f669d1fb86574f06381005d93d3517a" }
+                  </p>
+
+                  <hr />
+
+                  <p> 3- Serviço <strong>Rate Movie</strong> com método <strong>POST</strong>: </p>
+
+                  <p>https://api.themoviedb.org/3/movie/561/rating?api_key=02a91c06bc8383d5587a1b3529e82930&session_id=1</p>
+
+                  <p>
+                    <strong>Body</strong>:
+
+                    <br />
+
+                    { "value": 8.5 }
+                  </p>
+
+                  <hr />
+
+                  <p>Execute o serviço para gerar o token:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/01_createToken.png" alt="Serviço para geração do token" />
+                  </p>
+
+                  <p>
+                    Copiei o token (campo <strong>request_token</strong>) gerado sem as aspas na url https://www.themoviedb.org/authenticate/<strong>f05c4eba910cdae41e3019d35c9a5186e653b8e7</strong> e execute no navegador para autorizar o
+                    token:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/02_tokenAuth.png" alt="Copiando o link no navegador e apresentando aprovação" />
+                  </p>
+
+                  <hr />
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/03_authDone.png" alt="Autenticação realizada" />
+                  </p>
+
+                  <p> <strong>Observação</strong>: Processo realizado acima para simular autenticação do token de uma forma fácil para ser utilizado nos próximos serviços. </p>
+
+                  <p> No serviço <strong>Create Seesion</strong>, insira o token gerado e autorizado na api anterior no body no campo <strong>request_token</strong>, porém <strong>não execute</strong> o serviço: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/04_createSession.png" alt="Inserindo o token gerado no body json" />
+                  </p>
+
+                  <p>
+                    Caso tenha duvida como inserir um body em uma api, clique conforme <strong>item 1</strong>, selecione a opção JSON (No caso nossa api exposta está nesse formato) conforme <strong>item 2</strong> e digite ou copie o campo
+                    no formato Json conforme <strong>item 3</strong>:
+                  </p>
+
+                  <p>{ "request_token": "f05c4eba910cdae41e3019d35c9a5186e653b8e7" }</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/05_createBodyJson.png" alt="Criando Body Json" />
+                  </p>
+
+                  <p> Na Query String “<strong>session_id</strong>” após o <strong>=</strong>clique em <strong>CTRL + SPACE</strong>, onde apresentará as opções de configuração: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/06_configQueryString.png" alt="Clicando em ctrl + space para abrir opções de seleção" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/07_selectionOp.png" alt="Apresentando lista de opção para configuração" />
+                  </p>
+
+                  <p> Digite “<strong>resp</strong>” e selecione a opção <strong>Response Body Attribute</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/08_respAttr.png" alt="Selecionando opção Response Body Attribute" />
+                  </p>
+
+                  <p>Clique sobre o Response Body Attribute criado:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/09_clickRespBAttr.png" alt="Clicando sobre o response criado para configuração" />
+                  </p>
+
+                  <p>Será apresentando a tela de configuração:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/10_editTag.png" alt="Tela para configuração apresentada" />
+                  </p>
+
+                  <p>
+                    Em <strong>Request</strong> seleciona a api <strong>Create Session</strong> para que toda vez que executar api <strong>Rate Movie</strong> seja executado a api <strong>Create Session</strong> para gerar o
+                    <strong>session_id</strong> automático:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/11_requestSelection.png" alt="Selecionando o serviço Create Session" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/12_doneRequest.png" alt="Request selecionada" />
+                  </p>
+
+                  <p>
+                    Em
+                    <strong>Filter (JSONPath or XPath)</strong> inserira o operador <strong>$.</strong> + <strong>campo</strong> desejado para recuperar no response na execução da api <strong>Create Session</strong> irá ser utilizado o
+                    conteúdo do campo <strong>session_id</strong>:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/13_doneFilter.png" alt="Finalizado a configuração do campo session_id do response" />
+                  </p>
+
+                  <p>
+                    Em <strong>Trigger Behavior</strong> será configurado se será reenviada a execução do serviço <strong>Create Session</strong> que está sendo utilizando para obter o <strong>session_id</strong> automático. No tutorial
+                    vamos utilizar opção <strong>Awalys – resend request When needed</strong>, para acionar sempre o serviço para gerar novo <strong>session_id</strong>:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/14_triggerBehavior.png" alt="Demostrando todas opções para configuração" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/15_alwaysResend.png" alt="Selecionado a opção Awalys – resend request When needed" />
+                  </p>
+
+                  <p> Clique no botão <strong>Done</strong> para finalizar a configuração: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/16_doneConfigRespBAttr.png" alt="Configuração finalizada ao clicar no botão Done" />
+                  </p>
+
+                  <p>
+                    Na api <strong>Rate Movie</strong> insira a nota desejada do filme no campo <strong>value</strong> do body e execute o serviço, será gerado um <strong>session_id</strong> de forma automática acionado a api
+                    <strong>Create Session</strong> e inserindo na Query String <strong>session_id</strong> da api <strong>Rate Movie</strong>:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico10/17_executeService.png" alt="Serviço executado com sucesso" />
+                  </p>
+
+                  <p>
+                    <strong>Nota:</strong>Documentação do Insomnia caso queira se aprofundar nas configurações possíveis
+                    <a class="collapseUrl" href="https://docs.insomnia.rest/insomnia/chaining-requests" target="_blank">https://docs.insomnia.rest/insomnia/chaining-requests</a>
+                  </p>
+
+                  <p>
+                    <strong>Observação:</strong> Automatizar a execução de um serviço em outro pode ser realizado em quando parte da api, no caso do tutorial foi aplicado em uma Query String, porém pode ser aplicado em um header, auth,
+                    campo desejado do body etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando decima primeira sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingEleven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven" onclick="scrollUp()">
+                    11. Extraindo e importando cUrl de uma Api
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Para extrair o cUrl com a configuração deu uma api para ser compartilhada clique na opção <strong>Generate Client Code</strong>: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico11/01_generateClientCode.png" alt="Selecionando a opção Generate Client Code" />
+                  </p>
+
+                  <p>Irá apresentar o cUrl montando para compartilhamento para import no Insomnia:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico11/02_exportCurl.png" alt="Exporte apresentado para copia" />
+                  </p>
+
+                  <p>
+                    <strong>Observação</strong>: Existe a opção de selecionar outras opção de geração de cUrl alterando o Shell para outro desejado como Java, toda documentação do Insomnia pode ser encontrada em
+                    <a class="collapseUrl" href="https://docs.insomnia.rest/insomnia/get-started" target="_blank">https://docs.insomnia.rest/insomnia/get-started</a>
+                  </p>
+
+                  <p> Uma das formas de <strong>import</strong> do cURL pode ser criando uma nova api <strong>Http Request</strong> conforme abaixo: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico11/03_selectionFolderApis.png" alt="Clicando na pasta para apresentar a opção New Http Request" />
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico11/04_newHttpRequest.png" alt="Nova api criada" />
+                  </p>
+
+                  <p>Copie na nova api na url o cUrl que deseja importar:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico11/05_newRequest.png" alt="Copiando na url o curl" />
+                  </p>
+
+                  <p>Será configurado de forma automática a api alterando seu método, criando o body e inserindo o header conforme abaixo:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico11/06_doneImport.png" alt="Configuração automatica da api realizada" />
+                  </p>
+
+                  <p> <strong>Observação</strong>: Foi utilizado o cUrl abaixo para a copia na url e configuração: </p>
+
+                  <p>
+                    curl --request POST \ --url 'https://api.themoviedb.org/3/authentication/session/new?api_key=02a91c06bc8383d5587a1b3529e82930' \ --header 'Content-Type: application/json' \ --data '{ "request_token":
+                    "f05c4eba910cdae41e3019d35c9a5186e653b8e7" }'
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!– Criando decima segunda sessão –>
+            <div class="card">
+              <div class="card-header cardColor" id="headingTwelve">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve" onclick="scrollUp()">12. Filtrando o Response</button>
+                </h5>
+              </div>
+
+              <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p> Para casos do response retorna com muitos dados, pode ser filtrado apenas a estrutura/tag desejada utilizando o operador <strong>$.</strong> + <strong>nome</strong> conforme exemplo abaixo: </p>
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico12/01_filter.png" alt="utilizando operador $." />
+                  </p>
+
+                  <p> Foi inserido o filtro para o array <strong>genres</strong> utilizando o operador <strong>$.genres</strong> e clicando em <strong>Enter</strong> do teclado: </p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico12/02_genres.png" alt="Filtro no array genres realizado" />
+                  </p>
+
+                  <p> <strong>Nota</strong>: Estrutura do Array de gênero do filme: </p>
+
+                  <p> <strong>"genres"</strong>: [ { "id": 14, "name": "Fantasy" }, { "id": 28, "name": "Action" }, { "id": 27, "name": "Horror" } ] </p>
+
+                  <p>Para retornar o response completo só apagar o filtro:</p>
+
+                  <p>
+                    <img src="../../images/pages/ferramentas/Insomnia/topico12/03_doneFilter.png" alt="Apagado o filtro e retornado o response completo" />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../../js/jquery.min.js"></script>
+      <script src="../../js/popper.js"></script>
+      <script src="../../js/bootstrap.min.js"></script>
+      <script src="../../js/main.js"></script>
+      <script src="../../js/scrollUp.js"></script>
+      <script src="../../js/downloadPDF.js"></script>
+    </div>
+  </body>
 </html>
