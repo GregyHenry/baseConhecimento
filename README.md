@@ -10,7 +10,7 @@ Página criada para compartilhamento de conhecimento nos tópicos:
 
 ## Aplicação: 
 
-https://gregyhenry.github.io/baseConhecimento.github.io
+https://gregyhenry.github.io/baseConhecimento
 
 ![home](https://user-images.githubusercontent.com/92655806/226186828-3b7f611b-557f-4b33-8ee8-33c4e2fb392d.png)
 
