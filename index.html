@@ -1,178 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Base de conhecimento</title>
+    <meta name="author" content="Gregory Henry" />
+    <meta name="description" content="Base de conhecimento" />
+    <meta charset="utf-8" />
+    <meta /index.html name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <title>Base de conhecimento</title>
-  <meta name="author" content="Gregory Henry" />
-  <meta name="description" content="Base de conhecimento" />
-  <meta charset="utf-8" />
-  <meta /index.html name="viewport" content="width=device-width,
-    initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-</head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
 
-<body>
-  <div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar">
-      <div class="custom-menu">
-        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-          <i class="fa fa-bars"></i>
-          <span class="sr-only">Toggle Menu</span>
-        </button>
-      </div>
-
-      <!– Menu –>
+        <!– Menu –>
         <div class="p-4 pt-5">
           <h1>
             <!– Logo Texto –>
-              <a href="pages/home.html" class="logo" target="iframe">Base de conhecimento</a>
+            <a href="pages/home.html" class="logo" target="iframe">Base de conhecimento</a>
           </h1>
 
           <!– Menu –>
-            <ul class="list-unstyled components mb-5">
-              <li class="active">
-                <a href="#development" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle menu-item">Desenvolvimento
-                </a>
-                <ul class="collapse list-unstyled development-submenu" id="development">
-                  <li>
-                    <a class=" textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Java</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Javascript</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/desenvolvimento/logicaDeProgramacao.html" target="iframe"
-                      onclick="return hideMenu()">Lógica de Programação</a>
-                  </li>
-                </ul>
-              </li>
+          <ul class="list-unstyled components mb-5">
+            <li class="active">
+              <a href="#development" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Desenvolvimento </a>
+              <ul class="collapse list-unstyled development-submenu" id="development">
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Java</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Javascript</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/desenvolvimento/logicaDeProgramacao.html" target="iframe" onclick="return hideMenu()">Lógica de Programação</a>
+                </li>
+              </ul>
+            </li>
 
-              <li>
-                <a href="#bddata" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Banco
-                  de
-                  Dados</a>
-                <ul class="collapse list-unstyled bddata-submenu" id="bddata">
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">MongoBD</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">MySql</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Oracle</a>
-                  </li>
-                </ul>
-              </li>
+            <li>
+              <a href="#bddata" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Banco de Dados</a>
+              <ul class="collapse list-unstyled bddata-submenu" id="bddata">
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">MongoBD</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">MySql</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Oracle</a>
+                </li>
+              </ul>
+            </li>
 
-              <li>
-                <a href="#toolsSubmenu" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle menu-item">Ferramentas</a>
-                <ul class="collapse list-unstyled toolsSubmenu-submenu" id="toolsSubmenu">
-                  <li>
-                    <a id="insomnia-link" class="textSize" href="pages/ferramentas/insomnia.html" target="iframe"
-                      onclick="return hideMenu()">Insomnia</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Postman</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">SoapUI</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Sql
-                      Developer</a>
-                  </li>
-                </ul>
-              </li>
+            <li>
+              <a href="#toolsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Ferramentas</a>
+              <ul class="collapse list-unstyled toolsSubmenu-submenu" id="toolsSubmenu">
+                <li>
+                  <a id="insomnia-link" class="textSize" href="pages/ferramentas/insomnia.html" target="iframe" onclick="return hideMenu()">Insomnia</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Postman</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">SoapUI</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Sql Developer</a>
+                </li>
+              </ul>
+            </li>
 
-              <li>
-                <a href="#repository" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle menu-item">Repositório</a>
-                <ul class="collapse list-unstyled repository-submenu" id="repository">
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Git</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">GitHub</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">GtLab</a>
-                  </li>
-                </ul>
-              </li>
+            <li>
+              <a href="#repository" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Repositório</a>
+              <ul class="collapse list-unstyled repository-submenu" id="repository">
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Git</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">GitHub</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">GtLab</a>
+                </li>
+              </ul>
+            </li>
 
-              <li>
-                <a href="#tAutomation" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle menu-item">Teste
-                  Automatizado</a>
-                <ul class="collapse list-unstyled tAutomation-submenu" id="tAutomation">
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">RPA</a>
-                  </li>
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Selenium</a>
-                  </li>
-                </ul>
-              </li>
+            <li>
+              <a href="#tAutomation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Teste Automatizado</a>
+              <ul class="collapse list-unstyled tAutomation-submenu" id="tAutomation">
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">RPA</a>
+                </li>
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Selenium</a>
+                </li>
+              </ul>
+            </li>
 
-              <li>
-                <a href="#performance" data-toggle="collapse" aria-expanded="false"
-                  class="dropdown-toggle menu-item">Teste de
-                  Performance</a>
-                <ul class="collapse list-unstyled performance-submenu" id="performance">
-                  <li>
-                    <a class="textSize menu-link" href="pages/home.html" target="iframe"
-                      onclick="return hideMenu()">Jmeter</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <li>
+              <a href="#performance" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Teste de Performance</a>
+              <ul class="collapse list-unstyled performance-submenu" id="performance">
+                <li>
+                  <a class="textSize menu-link" href="pages/home.html" target="iframe" onclick="return hideMenu()">Jmeter</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-            <div class="footer">
-              <p> <a id="contactMail" class="textSize" href="pages/contato/contato.html" target="iframe"
-                  onclick="return hideMenu()">📧 Entre em Contato</a></p>
-              <p>
-                Developed by <strong class="footer">Gregy</strong><br />
-              </p>
-              <p>
-                <a class="fontAwesomeIcon" href="https://github.com/GregyHenry" target="_blank">
-                  <i class="fa-brands fa-github"></i></a>
-                <a class="fontAwesomeIcon linkedin" href="https://www.linkedin.com/in/gregory-henry-mguimaraes/"
-                  target="_blank"><i class="fab fa-linkedin"></i></a>
-              </p>
-            </div>
+          <div class="footer">
+            <p> <a id="contactMail" class="textSize" href="pages/contato/contato.html" target="iframe" onclick="return hideMenu()">📧 Entre em Contato</a></p>
+            <p> Developed by <strong class="footer">Gregy</strong><br /> </p>
+            <p>
+              <a class="fontAwesomeIcon" href="https://github.com/GregyHenry" target="_blank"> <i class="fa-brands fa-github"></i></a>
+              <a class="fontAwesomeIcon linkedin" href="https://www.linkedin.com/in/gregory-henry-mguimaraes/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <div id="content" class="p-4 p-md-5 pt-5">
-      <iframe id="openPages" name="iframe" src="pages/home.html"></iframe>
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <iframe id="openPages" name="iframe" src="pages/home.html"></iframe>
+      </div>
     </div>
 
-  </div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/enableCollapsibleMenu.js"></script>
-  <script src="js/hideMenu.js"></script>
-
-</body>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/enableCollapsibleMenu.js"></script>
+    <script src="js/hideMenu.js"></script>
+  </body>
 </html>

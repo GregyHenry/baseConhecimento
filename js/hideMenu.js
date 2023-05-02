@@ -1,4 +1,4 @@
 function hideMenu() {
-  let elementMenu = document.getElementById('sidebar');
-  elementMenu.classList.remove('active');
+  let elementMenu = document.getElementById("sidebar");
+  elementMenu.classList.remove("active");
 }

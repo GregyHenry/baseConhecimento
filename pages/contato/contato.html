@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta /index.html name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta /index.html name="viewport" content="width=device-width,
-    initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../../css/style.css" />
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  </head>
 
-  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-</head>
-
-<body>
-  <div class="wrapper d-flex align-items-stretch">
-    <div id="content" class="p-4 p-md-5 pt-5">
-      <!– Titulo da página –>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <!-- Titulo da página -->
         <div class="container text-center">
           <div class="row rowHeader">
             <div class="col-auto me-auto">
@@ -29,7 +27,7 @@
             <div class="form-group">
               <div class="form-group">
                 <label for="mail">Email</label>
-                <input type="email" class="form-control" id="mail" placeholder="yourmail@mail.com" name="mail">
+                <input type="email" class="form-control" id="mail" placeholder="yourmail@mail.com" name="mail" />
               </div>
             </div>
 
@@ -45,27 +43,24 @@
 
             <div class="form-group">
               <label for="textMail">Mensagem</label>
-              <textarea class="form-control textMail" id="textMail" name="textMail" maxlength="3000"
-                placeholder="Limite de 3000 caracteres"></textarea>
+              <textarea class="form-control textMail" id="textMail" name="textMail" maxlength="3000" placeholder="Limite de 3000 caracteres"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary colorBtnSendMail">Enviar</button>
             <div id="sucessMessage" class="sendMailSucess d-none"><strong>E-mail enviado com sucesso!</strong></div>
-            <div id="failedMessage" class="sendMailFailed d-none"><strong>Houve um erro ao enviar o e-mail. Tente
-                novamente mais tarde!</strong></div>
+            <div id="failedMessage" class="sendMailFailed d-none"><strong>Houve um erro ao enviar o e-mail. Tente novamente mais tarde!</strong></div>
           </form>
-
         </div>
+      </div>
+    </div>
 
-        <script src="../../js/jquery.min.js"></script>
-        <script src="../../js/popper.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/main.js"></script>
-        <script src="../../js/validateForm.js" defer></script>
-        <script src="../../js/validateMail.js" defer></script>
-        <script src="../../pages/contato/email.js" defer></script>
-        <script src="../../js/scrollUp.js"></script>
-
-</body>
-
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/validateForm.js" defer></script>
+    <script src="../../js/validateMail.js" defer></script>
+    <script src="../../pages/contato/email.js" defer></script>
+    <script src="../../js/scrollUp.js"></script>
+  </body>
 </html>
