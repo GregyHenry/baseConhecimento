@@ -42,6 +42,7 @@
                     Lógica de programação é a técnica utilizada para definir a sequência de ações que um programa de computador deve seguir para realizar uma determinada tarefa. Ela envolve o uso de estruturas lógicas, como condicionais
                     <strong>(if/else)</strong>, laços de repetição <strong>(while/for/do while)</strong>, e operadores lógicos, <strong>(AND/OR/NOT)</strong> para construir algoritmos que resolvem problemas computacionais.
                   </p>
+                  <p>Os passos que serão apresentados nesse módulo serão com base na linguagem javascript.</p>
                 </div>
               </div>
 
@@ -64,7 +65,7 @@
                     <p>
                       <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico2/01_Instalacao.jpg" alt="Site do Visual Studio Code demonstrando as opcões de download" \ />
                     </p>
-                    <p>Realize a instalação padrão.</p>
+                    <span>Realize a instalação padrão.</span>
                   </div>
                 </div>
               </div>
@@ -151,15 +152,715 @@
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMaster">
                 <div class="card-body textCard imagesDefault">
                   <p>Uma variável é um espaço de memória nomeado que é usado para armazenar um valor em um programa de computador.</p>
+
                   <p>Principais variáveis que vamos utilizar durante as etapas são:</p>
+
                   <ul>
-                    <li type="square"><strong>String:</strong> Utilizada para armazenamento de texto.</li>
-                    <li type="square"><strong>Number:</strong> Utilizada para armazenamento de números inteiros e reais.</li>
-                    <li type="square"><strong>Boolean:</strong> Utilizada para armazenamento um valor lógico de verdadeiro e falso.</li>
-                    <li type="square"><strong>Array:</strong> Utilizada para criar e armazenamento de listas de dados.</li>
-                    <li type="square"><strong>Object:</strong> Utilizada para criar e armazenamento de um objeto.</li>
-                    <li type="square"><strong>Date:</strong> Utilizada para armazenamento de datas.</li>
+                    <li type="square"><strong>String:</strong> Utilizada para armazenar texto.</li>
+                    <li type="square"><strong>Number:</strong> Utilizada para armazenar números inteiros e reais.</li>
+                    <li type="square"><strong>Boolean:</strong> Utilizada para armazenar um valor lógico de verdadeiro e falso.</li>
+                    <li type="square"><strong>Array:</strong> Utilizada para criar e armazenar listas de dados.</li>
+                    <li type="square"><strong>Object:</strong> Utilizada para criar e armazenar um objeto.</li>
+                    <li type="square"><strong>Date:</strong> Utilizada para armazenar datas.</li>
                   </ul>
+
+                  <p>No arquivo script.js realize a declaração das variáveis de exemplo para fixação conforme abaixo: </p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico4/01_createVar.jpg" alt="Criando as variaveis no arquivo script.js" />
+                  </p>
+
+                  <p
+                    >Uma variável sempre inicia com a palavra <strong>var</strong>(variável global, pode ser acessada qualquer parte do código do javascript) ou <strong>let</strong>(variável de bloco, pode ser acessada apenas no bloco que
+                    foi declarada no javascript). Após vamos inserir o nome para variável, onde sempre precisa iniciar com um caractere e pode seguir os modelos de escrita <strong>Camel Case</strong>, <strong>Pascal Case</strong> e
+                    <strong>Snake Case</strong>, por fim inserir o valor para a variável.
+                  </p>
+
+                  <p>Os modelos de escrita de variáveis:</p>
+
+                  <ul>
+                    <li type="square"
+                      >Camel Case - A primeira palavra começa com letra minúscula e a primeira letra de cada palavra subsequente é escrita em maiúscula, sem espaços ou outros separadores. Exemplo: var <strong>mediaAluno</strong> = 6.5
+                    </li>
+                    <li type="square"
+                      >Pascal Case - A primeira palavra começa com letra maiúscula e a primeira letra de cada palavra subsequente é escrita em maiúscula, sem espaços ou outros separadores. Exemplo: var <strong>MediaAluno</strong> = 5.3
+                    </li>
+                    <li type="square">Snake Case - Todas as letras são minúsculas e as palavras são separadas por um sublinhado. Exemplo: var <strong>media_aluno</strong> = 3.2</li>
+                  </ul>
+
+                  <p
+                    >Lembre-se de que a escolha do modelo de escrita deve ser consistente em todo o seu código, para garantir que seus identificadores sejam facilmente compreensíveis e legíveis para outros desenvolvedores que possam
+                    trabalhar no mesmo projeto.</p
+                  >
+
+                  <p
+                    >Dentro do alert vamos inserir a crase ( <strong>`</strong> ) para conseguir concatenar de maneira mais limpa nosso texto com nossas variáveis, onde as variáveis deve ser inserido com cifrão ( <strong>$</strong> ) e
+                    inserido dentro de chaves ( <strong>{</strong> ):</p
+                  >
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico4/02_alertMsg.jpg" alt="Criando alert para visualizar as variaveis do item anterior" />
+                  </p>
+
+                  <p>Abra o seu arquivo index.html no seu navegador e será apresentandos os alerts das variáveis que criamos:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico4/03_alertNav.jpg" alt="Alerta demonstrando no navegador para o usuário" />
+                  </p>
+
+                  <p
+                    ><strong>Nota:</strong> Foi criado o alert da variável data apenas para apresentar o dia, mês e ano. Assim utilizamos só parte da variável retirando horário e concatenando com a barra ( <strong>/</strong> ) para separar
+                    os dados. <strong>Exemplo:</strong> dataAtual.getDay() + "/" + dataAtual.getMonth() + "/" + dataAtual.getFullYear()
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando quinta sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="scrollUp()">5. Operadores Aritméticos</button>
+                </h5>
+              </div>
+
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>Os operadores aritméticos são usados em javaScript para realizar operações matemáticas em valores numéricos.</p>
+
+                  <p><strong>Exemplo de Soma:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/01_addNumber.jpg" alt="Somando de 2 numeros e acrescentando em uma nova variavel soma" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/02_addNumberAlert.jpg" alt="Apresentando a soma no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de Subtração:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/03_subNumber.jpg" alt="Subtração de 2 numeros e acrescentando em uma nova variavel subtracao" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/04_subNumberAlert.jpg" alt="Apresentando a subtraçao no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de Multiplicação:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/05_multNumber.jpg" alt="Multiplicação de 2 numeros e acrescentando em uma nova variavel multiplicacao" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/06_multNumberAlert.jpg" alt="Apresentando a multiplicação no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de Divisão:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/07_divNumber.jpg" alt="Divisão de 2 numeros e acrescentando em uma nova variavel divisao" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/08_divNumberAlert.jpg" alt="Apresentando a divisão no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de Resto da divisão (Remainder - Módulo):</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/09_restNumber.jpg" alt="Resto da divisão de 2 numeros e acrescentando em uma nova variavel resto" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/10_restNumberAlert.jpg" alt="Apresentando o resto da divisão no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de exponencial:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/11_expNumber.jpg" alt="Exponencial de 2 numeros e acrescentando em uma nova variavel exponencial" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/12_expNumberAlert.jpg" alt="Apresentando o exponencial no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de Incremento (Adiciona um ao seu operando):</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/13_incNumber.jpg" alt="Incremento de 1 numero" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/14_incNumberAlert.jpg" alt="Apresentando o incremento no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exemplo de Decremento (Subtrai um ao seu operando):</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/15_decNumber.jpg" alt="Decremento de 1 numero" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/16_decNumberAlert.jpg" alt="Apresentando o decremento no navegador para o usuário" />
+                  </p>
+
+                  <p><strong>Exercício:</strong></p>
+
+                  <p>Leia 3 valores, no caso, variáveis nota1, nota2 e nota3, que são as três notas de um aluno. A seguir, calcule a média do aluno.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/17_mediaNumber.jpg" alt="Resolução do Exercício" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador):</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico5/18_mediaNumberAlert.jpg" alt="Apresentando a média no navegador para o usuário" />
+                  </p>
+
+                  <p>
+                    Para se aprofundar mais sobre operadores pode ser consultado o material oficial da Mozilla Developer Org:
+                    <a class="collapseUrl" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators" target="_blank"
+                      >https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_Operators</a
+                    >:
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando sexto sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="scrollUp()">6. Operadores de Comparação</button>
+                </h5>
+              </div>
+
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>
+                    Os operadores de comparação são usados para comparar dois valores e determinar se eles são iguais, diferentes, maiores, menores, maiores ou iguais, ou menores ou iguais. Os operadores de comparação retornam um valor
+                    booleano (true ou false) que indica se a comparação é verdadeira ou falsa.</p
+                  >
+
+                  <p><strong>Exemplo do operador Igual:</strong></p>
+
+                  <p>Operador de igual valida se os dados são iguais, foi criado duas variáveis uma sendo número e outra sendo string contendo valores 10, retorno da expressão vai retornar verdadeiro.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/01_equalOpe.jpg" alt="Demonstrando o operador igual" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/02_equalOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador igual" />
+                  </p>
+
+                  <p><strong>Exemplo do operador Não igual:</strong></p>
+
+                  <p>Operador de não igual valida se os dados são diferentes, no caso as duas variáveis contém os valores 10, retorno da expressão vai retornar falso, se fosse valores diferentes retornaria true.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/03_notEqualOpe.jpg" alt="Demonstrando o operador não igual" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/04_notEqualOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador não igual" />
+                  </p>
+
+                  <p><strong>Exemplo do operador Estritamente igual:</strong></p>
+
+                  <p>Retorna verdadeiro caso os operandos sejam iguais e do mesmo tipo. No caso do exemplo irá retornar falso, pois o conteúdo é igual 10, porém o tipo é diferente um é string outro number.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/05_extrEqualOpe.jpg" alt="Demonstrando o operador estritamente igual" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/06_extrEqualOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador estritamente igual" />
+
+                  <p><strong>Exemplo do operador Estritamente não igual:</strong></p>
+
+                  <p>Retorna verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo. No caso do exemplo irá retornar true, pois o conteúdo é igual 10, porém o tipo é diferente um é string outro number.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/07_extrNotEqualOpe.jpg" alt="Demonstrando o operador estritamente não igual" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/08_extrNotEqualOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador estritamente não igual" />
+                  </p>
+
+                  <p><strong>Exemplo do operador Maior que:</strong></p>
+
+                  <p>Retorna verdadeiro caso o operando da esquerda seja maior que o da direita. No caso do exemplo irá retornar false, pois o conteúdo é igual 10 e não maior ou menor.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/09_bigOpe.jpg" alt="Demonstrando o operador maior que" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/10_bigOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador maior que" />
+                  </p>
+
+                  <p><strong>Exemplo do operador Maior que ou igual:</strong></p>
+
+                  <p>Retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita. No caso do exemplo irá retornar true, pois o conteúdo é igual 10.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/11_bigEqualOpe.jpg" alt="Demonstrando o operador maior que ou igual" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/12_bigEqualOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador maior que ou igual" />
+                  </p>
+
+                  <p><strong>Exemplo do operador Menor que:</strong></p>
+
+                  <p>Retorna verdadeiro caso o operando da esquerda seja menor que o da direita. No caso do exemplo irá retornar false, pois o conteúdo é igual 10 e não maior ou menor.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/13_smallOpe.jpg" alt="Demonstrando o operador menor que" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/14_smallOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador menor que" />
+
+                  <p><strong>Exemplo do operador Menor que ou igual:</strong></p>
+
+                  <p>Retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita. No caso do exemplo irá retornar true, pois o conteúdo é igual 10.</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/15_smallEqualOpe.jpg" alt="Demonstrando o operador Menor que ou igual" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico6/16_smallEqualOpeAlert.jpg" alt="Apresentado para o usuário o retorno do operador Menor que ou igual" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando setimo sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" onclick="scrollUp()">7. Condicionais de decisão</button>
+                </h5>
+              </div>
+
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p
+                    >A estrutura condicional em javaScript é utilizada para controlar o fluxo do programa, permitindo a execução de um trecho de código apenas se uma determinada condição for satisfeita. A estrutura condicional básica em
+                    javaScript é o if, mas também existem outras como o else if, else, switch case e o operador ternário.</p
+                  >
+
+                  <p>Tipos de condicionais:</p>
+
+                  <ul>
+                    <li type="square">O <strong>if</strong> é usado para executar um bloco de código se a condição especificada for verdadeira. Se a condição for falsa, o bloco de código não será executado.</li>
+                    <li type="square"
+                      >O <strong>else if</strong> é usado para testar múltiplas condições. Se a primeira condição especificada for falsa, o bloco de código associado ao else if será executado se a condição especificada for verdadeira. É
+                      possível ter vários blocos else if em uma instrução if.</li
+                    >
+                    <li type="square">O <strong>else</strong> é usado para executar um bloco de código se a condição especificada na instrução if for falsa.</li>
+                    <li type="square">O <strong>switch case</strong> é usado para testar várias condições com uma única variável. É uma alternativa mais limpa para usar múltiplos blocos.</li>
+                    <li type="square"
+                      >O <strong>Ternário</strong> é uma forma concisa de escrever uma instrução if de uma única linha. Ele é composto por três partes: a condição, o valor retornado se a condição for verdadeira e o valor retornado se a
+                      condição for falsa.</li
+                    >
+                  </ul>
+
+                  <p><strong>Exemplo de if:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/01_if.jpg" alt="Exemplo da estrutura if" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/02_ifAlert.jpg" alt="Demonstrado o resultado para o usuário do if" />
+                  </p>
+
+                  <p><strong>Exemplo de else if:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/03_elseIf.jpg" alt="Exemplo da estrutura else if" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/04_elseIfAlert.jpg" alt="Demonstrado o resultado para o usuário do else if" />
+                  </p>
+
+                  <p><strong>Exemplo de else:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/05_else.jpg" alt="Exemplo da estrutura else" />
+                  </p>
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/06_elseAlert.jpg" alt="Demonstrado o resultado para o usuário do else" />
+                  </p>
+
+                  <p><strong>Exemplo de switch case:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/07_switchCase.jpg" alt="Exemplo da estrutura switch case" />
+                  </p>
+
+                  <p
+                    ><strong>Nota:</strong> Neste exemplo, o bloco de código dentro do case correspondente ao valor da variável diaDaSemana será executado. Se nenhum case corresponder ao valor da variável, o bloco de código dentro do
+                    default será executado.</p
+                  >
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/08_switchCaseAlert.jpg" alt="Demonstrado o resultado para o usuário do switch case" />
+                  </p>
+
+                  <p><strong>Exemplo de Ternário:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/09_ternario.jpg" alt="Exemplo da estrutura ternário" />
+                  </p>
+
+                  <p
+                    >Neste exemplo, o operador ternário testa se a variável idade é maior ou igual a 18. Se for, a mensagem "Você é maior de idade." é atribuída à variável mensagem. Caso contrário, a mensagem "Você é menor de idade." é
+                    atribuída. A mensagem resultante é então exibida no console.</p
+                  >
+
+                  <p>Valor apresentado no alert (Página index.html no navegador)</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico7/10_ternarioAlert.jpg" alt="Demonstrado o resultado para o usuário do ternário" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando oitava sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingEight">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" onclick="scrollUp()">8. Estruturas de repetição</button>
+                </h5>
+              </div>
+
+              <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p>As estruturas de repetição em JavaScript permitem que um bloco de código seja executado várias vezes. Algumas estruturas de repetição disponíveis em javaScript são for, while e do-while.</p>
+
+                  <p>Tipos de condicionais:</p>
+
+                  <ul>
+                    <li type="square">O <strong>for</strong> é uma estrutura de repetição comum que é usada quando você sabe quantas vezes deseja executar o bloco de código.</li>
+                    <li type="square">O <strong>while</strong> é uma estrutura de repetição que é usada quando você não sabe quantas vezes o bloco de código deve ser executado, mas sabe a condição de saída.</li>
+                    <li type="square">O <strong>do-while</strong> é semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição for falsa.</li>
+                  </ul>
+
+                  <p><strong>Exemplo de for:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico8/01_for.jpg" alt="Exemplo de estrutura for" />
+                  </p>
+
+                  <p>Neste exemplo, o bloco de código dentro do for será executado 10 vezes. A variável i é inicializada com 0 e incrementada a cada iteração. O bloco de código será executado enquanto i for menor que 10.</p>
+
+                  <p><strong>Exemplo de while:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico8/02_while.jpg" alt="Exemplo de estrutura while" />
+                  </p>
+
+                  <p
+                    >Neste exemplo, o bloco de código dentro do while será executado até que i seja igual a 10. A variável i é inicializada com 0 e incrementada a cada iteração. O bloco de código será executado enquanto i for menor que
+                    10.</p
+                  >
+
+                  <p><strong>Exemplo de do-while:</strong></p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico8/03_doWhile.jpg" alt="Exemplo de estrutura do-while" />
+                  </p>
+
+                  <p
+                    >Neste exemplo, o bloco de código dentro <strong>do</strong> será executado pelo menos uma vez, pois a condição é verificada no final do loop. A variável i é inicializada com 0 e incrementada a cada iteração. O bloco de
+                    código será executado enquanto i for menor que 10.</p
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando nona sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingNine">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" onclick="scrollUp()">9. Estrutura recursiva</button>
+                </h5>
+              </div>
+
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p
+                    >A estrutura recursiva em javaScript é uma técnica de programação onde uma função chama a si mesma para resolver um problema. Essa técnica é muito utilizada em problemas que podem ser divididos em subproblemas menores, e
+                    que a solução de um subproblema depende da solução de outro subproblema.</p
+                  >
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico9/01_recursiva.jpg" alt="Exemplo de estrutura recursiva" />
+                  </p>
+
+                  <p
+                    ><strong>Nota</strong>: Essa função recebe um número n como parâmetro e verifica se ele é igual a 0 ou 1. Se for, retorna 1, pois o fatorial de 0 ou 1 é 1. Caso contrário, a função chama a si mesma passando como
+                    parâmetro n - 1 e multiplica o resultado pelo valor de n. A chamada recursiva se repete até que n seja igual a 1, quando a função começa a retornar os valores e a multiplicação é realizada em cadeia até chegar ao valor
+                    final do fatorial.</p
+                  >
+
+                  <p>Ao final, a função retorna o resultado da multiplicação em cadeia: 5 x 4 x 3 x 2 x 1 = 120, que é o fatorial de 5.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando décima sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingTen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen" onclick="scrollUp()">10. Funções</button>
+                </h5>
+              </div>
+
+              <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p
+                    >Em programação, as funções são usadas para agrupar um bloco de código que executa uma tarefa específica e pode ser reutilizado várias vezes no programa. Elas são muito úteis para evitar repetições de código e organizar
+                    a lógica do programa em partes menores e mais gerenciáveis.</p
+                  >
+
+                  <p>Em javaScript, as funções podem ser definidas de duas maneiras: como função tradicional ou como arrow function.</p>
+
+                  <p
+                    >Uma função tradicional é definida usando a palavra-chave function seguida pelo nome da função, lista de parâmetros (entre parênteses) e o corpo da função (entre chaves). Por exemplo, uma função tradicional que soma dois
+                    números pode ser definida assim:</p
+                  >
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico10/01_funcTrad.jpg" alt="Exemplo da estrutura tradicional de função" />
+                  </p>
+
+                  <p>Neste exemplo, a função soma recebe dois parâmetros a e b e retorna a soma dos dois.</p>
+
+                  <p
+                    >Já a arrow function é uma forma mais concisa de definir funções em javaScript. Ela usa a sintaxe de uma seta (=>) para definir a função, sem precisar da palavra-chave function. A estrutura da arrow function é a
+                    seguinte:
+                  </p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico10/02_funcArrow.jpg" alt="Exemplo da estrutura arrow de função" />
+                  </p>
+
+                  <p>Neste exemplo, a arrow function soma também recebe dois parâmetros a e b e retorna a soma dos dois.</p>
+
+                  <p
+                    >Uma diferença importante entre as duas formas de definir funções é que, em arrow functions, o valor de this é definido no momento da criação da função, enquanto em funções tradicionais o valor de this é definido no
+                    momento da execução da função.</p
+                  >
+
+                  <p>Outra diferença é que, se a função arrow tiver apenas uma expressão no corpo, é possível omitir as chaves e o return. Por exemplo, a função soma pode ser escrita como uma arrow function mais curta assim:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico10/03_arrowfunc.jpg" alt="Exemplo da estrutura arrow function sem return declarado" />
+                  </p>
+
+                  <p>Neste caso, a função soma ainda recebe dois parâmetros a e b e retorna a soma dos dois, mas de uma forma mais concisa.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando décima primeira sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingEleven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven" onclick="scrollUp()">11. Lista - Array</button>
+                </h5>
+              </div>
+
+              <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p
+                    >Uma lista é uma estrutura de dados que armazena um conjunto de valores, geralmente do mesmo tipo, sob um único nome. As listas são também chamadas de arrays e podem ser usadas para armazenar vários valores de um mesmo
+                    tipo em uma única variável.</p
+                  >
+
+                  <p>As listas em JavaScript são indexadas, o que significa que cada elemento na lista é acessado por um índice numérico. O índice do primeiro elemento na lista é 0, o índice do segundo elemento é 1, e assim por diante.</p>
+
+                  <p>Para criar uma lista em JavaScript, basta declarar uma variável e atribuir um conjunto de valores a ela, separados por vírgulas e entre colchetes <strong>[]</strong>. Por exemplo:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico11/01_list.jpg" alt="Exemplo de lista array já definido" />
+                  </p>
+
+                  <p>Também é possível criar uma lista vazia e adicionar elementos a ela posteriormente, usando o método push(). Por exemplo:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico11/02_pushList.jpg" alt="Exemplo de lista vazia sendo preenchido pelo método push()" />
+                  </p>
+
+                  <p>Algumas operações comuns que podem ser realizadas em listas em javaScript incluem:</p>
+
+                  <p>Acesso a elementos individuais por meio de seus índices:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico11/03_indexList.jpg" alt="Exemplo de filtro por índice" />
+                  </p>
+
+                  <p>Iteração sobre todos os elementos da lista, usando um loop for:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico11/04_forArray.jpg" alt="Exemplo do uso do for com array" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando décima segunda sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingTwelve">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve" onclick="scrollUp()">12. Objetos</button>
+                </h5>
+              </div>
+
+              <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p
+                    >Objetos são uma estrutura de dados que permitem armazenar um conjunto de valores relacionados em uma única unidade. Um objeto é criado usando um par de chaves {} e pode conter um ou mais pares de chave-valor separados
+                    por vírgula. Cada valor é acessado por meio de uma chave específica.</p
+                  >
+
+                  <p>Por exemplo, um objeto pessoa pode conter as informações de uma pessoa, como nome, idade, cidade, telefone e assim por diante. O objeto pessoa pode ser criado da seguinte forma:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico12/01_createObj.jpg" alt="Demonstracão da criação de um objeto" />
+                  </p>
+
+                  <p>Aqui o nome, idade, cidade e telefone são chaves e "João", 25, "São Paulo" e "(11) 99999-9999" são seus respectivos valores.</p>
+
+                  <p>Os valores dentro de um objeto podem ser acessados usando a notação de ponto (.). Por exemplo, podemos acessar o valor da chave nome do objeto pessoa da seguinte forma:</p>
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico12/02_printObj.jpg" alt="Demonstração do filtro do objeto" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando décima terceira sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingThirteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen" onclick="scrollUp()">13. Matriz de dados</button>
+                </h5>
+              </div>
+
+              <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <p
+                    >Uma matriz é uma estrutura de dados que contém uma coleção de valores organizados em linhas e colunas. Uma matriz pode ser criada usando colchetes [] e separando cada elemento com uma vírgula. Por exemplo, a seguinte
+                    matriz contém 3 linhas e 3 colunas de números inteiros:</p
+                  >
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico13/01_matrizCreate.jpg" alt="Demonstracão da criação de uma matriz" />
+                  </p>
+
+                  <p
+                    >Neste exemplo, matriz é uma matriz 3x3 que contém os números de 1 a 9 organizados em 3 linhas e 3 colunas. Os elementos da matriz podem ser acessados usando a notação de colchetes [linha][coluna]. Por exemplo, para
+                    acessar o valor da segunda linha e terceira coluna, podemos escrever:</p
+                  >
+
+                  <p>
+                    <img src="../../images/pages/desenvolvimento/LogicaProgramacao/topico13/02_matrizView.jpg" alt="Exemplo da consulta da matriz" />
+                  </p>
+
+                  <p><strong>Nota</strong>: Lembrado que os índices iniciam sempre com zero, devido a isso a segunda linha sua referência é o índice 1 e a terceira coluna sua referência é o índice 2.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Criando décima quarta sessão  -->
+            <div class="card">
+              <div class="card-header cardColor" id="headingFourteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed titleCor" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen" onclick="scrollUp()"
+                    >14. Materiais de apoio</button
+                  >
+                </h5>
+              </div>
+
+              <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionMaster">
+                <div class="card-body textCard imagesDefault">
+                  <span>
+                    <br />
+                    Guia de apoio javaScript - <strong>Mozilla Developer</strong>:
+                    <br />
+                    <a class="collapseUrl" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript</a>
+                  </span>
+
+                  <span>
+                    <br />
+                    <br />
+                    Guia de apoio javaScript - DOM - <strong>W3Schools</strong>:
+                    <br />
+                    <a class="collapseUrl" href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">https://www.w3schools.com/js/js_htmldom.asp</a>
+                  </span>
+
+                  <span>
+                    <br />
+                    <br />
+                    Portal para praticar exercícios de lógica de programação - <strong>Beecrowd</strong>:
+                    <br />
+                    <a class="collapseUrl" href="https://www.beecrowd.com.br/judge/pt" target="_blank">https://www.beecrowd.com.br/judge/pt</a>
+                  </span>
                 </div>
               </div>
             </div>
