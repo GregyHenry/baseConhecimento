@@ -2,7 +2,7 @@
 
 Página criada para compartilhamento de conhecimento nos tópicos:
 
-#### • Desenvolvimento - BackEnd / FrontEnd
+#### • Desenvolvimento
 #### • Banco de dados
 #### • Serviços Soap e Rest
 #### • Testes Automatizados e Performance
@@ -12,7 +12,7 @@ Página criada para compartilhamento de conhecimento nos tópicos:
 
 https://gregyhenry.github.io/baseConhecimento
 
-![home](https://user-images.githubusercontent.com/92655806/226186828-3b7f611b-557f-4b33-8ee8-33c4e2fb392d.png)
+![image](https://user-images.githubusercontent.com/92655806/236076473-208f8dfa-9ad6-4d57-b819-2575cfa73547.png)
 
 ## Tecnologias utilizadas
 
