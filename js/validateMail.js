@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   function validateMail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return regex.test(email);
   }
 
